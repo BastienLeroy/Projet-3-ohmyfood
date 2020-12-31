@@ -1,0 +1,21 @@
+.container {
+  font-family: "Roboto", sans-serif;
+}
+
+.headerLogo {
+  font-size: 2rem;
+  font-family: "Shrikhand", cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=styles.css.map */

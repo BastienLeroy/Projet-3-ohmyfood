@@ -1,0 +1,17 @@
+@import "vars";
+@import "mixin";
+
+
+.container {
+    font-family: $fontRoboto;
+}
+
+.headerLogo {
+    font-size: 2rem;
+    font-family: $fontShrikhand;
+    @include positionBlock;
+}
+
+.intro {
+    display: flex;
+}
