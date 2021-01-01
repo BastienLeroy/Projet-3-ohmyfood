@@ -4,6 +4,9 @@
 
 .container {
     font-family: $fontRoboto;
+    width: 1240px;
+    width: 100vw;
+    height: 100vh;
 }
 
 .headerLogo {
@@ -11,7 +14,73 @@
     font-family: $fontShrikhand;
     @include positionBlock;
 }
+.headerLocation {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
 
 .intro {
+    flex-wrap: wrap;
+    @include postionBase;
+
+    .introContent {
+        @include postionBase;
+        width: 100%
+        
+    }
+}
+.step {
     display: flex;
+    flex-direction: column;
+
+    .stepList {
+        @include postionBase;
+
+        .stepListItem {
+            @include postionBase;
+
+            & > h4 {
+                margin: 0;
+                padding-left: 1rem;
+            }
+        }
+    }
+}
+.restaurant {
+    background-color: $backgroundPrimary;
+
+    .restaurantList {
+        @include postionBase;
+        flex-wrap: wrap;
+        padding-bottom: 1rem;
+
+        .restaurantListItem {
+            box-shadow: 2px 2px 10px grey;
+            border-radius: 1rem 0 0 1rem;
+            width: 600px;
+            margin-top: 2rem;
+            display : flex;
+            flex-direction: row;
+            background-color: white;
+            
+        
+            .restaurantListItemImg {
+                @include sizeImg;
+                            }
+
+            .restaurantListItemName {
+
+                & > .checkHeart {
+                    @include checkHeart;
+                    align-content: flex-end;
+                    align-items: flex-end;
+                }
+                                   
+                
+                
+
+            }
+        }
+    }
 }

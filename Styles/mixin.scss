@@ -2,3 +2,57 @@
     display: flex;
     justify-content: center;
 }
+@mixin sizeImg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem 0 0 1rem ;
+    width: 300px;
+    height: 150px;
+}
+@mixin postionBase {
+    display : flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+
+}
+@mixin checkHeart {
+   
+        [id="heart"] {
+            position: absolute;
+            left: -100vw;
+        }
+        
+        [for="heart"] {
+            color: #aab8c2;
+            cursor: pointer;
+            font-size: 2em;
+            align-self: center;  
+            transition: color 0.2s ease-in-out;
+        }
+        
+        [for="heart"]:hover {
+            color: grey;
+        }
+        
+        [for="heart"]::selection {
+            color: none;
+            background: transparent;
+        }
+        
+        [for="heart"]::moz-selection {
+            color: none;
+            background: transparent;
+        }
+        
+        [id="heart"]:checked + label {
+            color: #e2264d;
+            will-change: font-size;
+            animation: heart 1s cubic-bezier(.17, .89, .32, 1.49);
+        }
+        
+        
+        
+        @keyframes heart {0%, 17% {font-size: 0;}}
+    }
