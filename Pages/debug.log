@@ -2,3 +2,4 @@
 [0101/132542.985:ERROR:process_info.cc(359)] UncheckedAllocate
 [0101/132635.505:ERROR:process_info.cc(359)] UncheckedAllocate
 [0101/132813.542:ERROR:process_info.cc(359)] UncheckedAllocate
+[0102/141815.551:ERROR:directory_reader_win.cc(43)] FindFirstFile: Le chemin d’accès spécifié est introuvable. (0x3)

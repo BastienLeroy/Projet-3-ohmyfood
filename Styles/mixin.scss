@@ -10,49 +10,42 @@
     width: 300px;
     height: 150px;
 }
-@mixin postionBase {
+@mixin positionBase {
     display : flex;
     flex-direction: row;
     justify-content: space-evenly;
-
-
 }
 @mixin checkHeart {
+
+    @keyframes heart {0%, 17% {font-size: 0}}
    
-        [id="heart"] {
-            position: absolute;
-            left: -100vw;
-        }
-        
-        [for="heart"] {
-            color: #aab8c2;
-            cursor: pointer;
-            font-size: 2em;
-            align-self: center;  
-            transition: color 0.2s ease-in-out;
-        }
-        
-        [for="heart"]:hover {
-            color: grey;
-        }
-        
-        [for="heart"]::selection {
-            color: none;
-            background: transparent;
-        }
-        
-        [for="heart"]::moz-selection {
-            color: none;
-            background: transparent;
-        }
-        
-        [id="heart"]:checked + label {
-            color: #e2264d;
-            will-change: font-size;
-            animation: heart 1s cubic-bezier(.17, .89, .32, 1.49);
-        }
-        
-        
-        
-        @keyframes heart {0%, 17% {font-size: 0;}}
+    #heart1, #heart2, #heart3, #heart4 {
+        position: absolute;
+        left: -100vw;
     }
+    
+    #heart1Label, #heart2Label, #heart3Label, #heart4Label {
+        color: #aab8c2;
+        cursor: pointer;
+        font-size: 2em;
+        align-self: center;  
+        transition: color 0.2s ease-in-out;
+    }
+    
+    #heart1Label:hover, #heart2Label:hover, #heart3Label:hover, #heart4Label:hover {
+        color: grey;
+    }
+    
+    #heart1Label::selection, #heart2Label::selection, #heart3Label::selection, #heart4Label::selection {
+        color: none;
+        background: transparent;
+    }
+    
+    #heart1:checked + label, #heart2:checked + label, #heart3:checked + label, #heart4:checked + label {
+        background: -webkit-linear-gradient(#9356DC, #FF79DA);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        will-change: font-size;
+        animation: heart 1s cubic-bezier(.17, .89, .32, 1.49);
+    }
+}
