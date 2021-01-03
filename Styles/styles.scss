@@ -1,6 +1,11 @@
 @import "vars";
 @import "mixin";
 
+body {
+    margin: auto;
+    max-width: 1280px;
+    width: 100%;
+}
 
 .container {
     font-family: $fontRoboto;
@@ -101,7 +106,7 @@
 .restaurant {
     background-color: $backgroundPrimary;
     margin : 1rem 0 1rem 0;
-
+    border-radius: 1rem 1rem 1rem 1rem;
     .restaurantTitle {
         padding : 1rem 0 0 1rem;
     }
