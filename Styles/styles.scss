@@ -4,9 +4,9 @@
 
 .container {
     font-family: $fontRoboto;
-    width: 1240px;
     height: 100vh;
-    margin-right: 1rem;
+    margin: 0 1rem 0 1rem;
+    position: relative;
 }
 
 .headerLogo {
@@ -26,7 +26,8 @@
 
     .introContent {
         @include positionBase;
-        width: 100%
+        width: 100%;
+        margin-bottom: 1rem;
         
     }
     .introButton {
@@ -35,12 +36,14 @@
         width: 300px;
         height: 60px;
         color: white;
-        border : 1px solid #f2f2f2;
+        border : 1px solid $backgroundPrimary;
         border-radius: 60px ;
         background: #FF79DA;
-background: -moz-linear-gradient(top, #FF79DA 0%, #D675FF 73%, #9356DC 100%);
-background: -webkit-linear-gradient(top, #FF79DA 0%, #D675FF 73%, #9356DC 100%);
-background: linear-gradient(to bottom, #FF79DA 0%, #D675FF 73%, #9356DC 100%);
+        background: -moz-linear-gradient(top, #FF79DA 0%, #D675FF 73%, #9356DC 100%);
+        background: -webkit-linear-gradient(top, #FF79DA 0%, #D675FF 73%, #9356DC 100%);
+        background: linear-gradient(to bottom, #FF79DA 0%, #D675FF 73%, #9356DC 100%);
+        box-shadow: 5px 5px 20px $boxShadowColor;
+        cursor: pointer;
     }
 }
 .step {
@@ -53,16 +56,24 @@ background: linear-gradient(to bottom, #FF79DA 0%, #D675FF 73%, #9356DC 100%);
         
         .stepListItem {
             position: relative;
-            border: 1px #f2f2f2 solid ;
+            border: 1px$backgroundPrimary solid ;
             border-radius : 20px;
-            box-shadow: 5px 5px 20px #d3d3d3;
+            box-shadow: 5px 5px 20px $boxShadowColor;
             height: 75px;
             width: calc(1200px / 3);
-            background-color: #f2f2f2;
+            background-color:$backgroundPrimary;
             display: flex;
             justify-content: center;
             align-items: center;
             cursor: pointer;
+
+            &:hover {
+                background-color: #f9ebff;
+
+                i {
+                    color : #9356dc;
+                }
+            }
             
             > p {
                 position: absolute; 
@@ -74,23 +85,26 @@ background: linear-gradient(to bottom, #FF79DA 0%, #D675FF 73%, #9356DC 100%);
                 border-radius: 100%;
                 text-align: center;
             }
+
             > h4 {
                 font-size: 1.1rem;
                 margin: 0;
                 padding-left: 1rem;
             }
+
             > i {
                 color :grey ;
-
-                &:hover {
-                    color : #9356dc;
-                }
             }
         }
     }
 }
 .restaurant {
     background-color: $backgroundPrimary;
+    margin : 1rem 0 1rem 0;
+
+    .restaurantTitle {
+        padding : 1rem 0 0 1rem;
+    }
 
     .restaurantList {
         @include positionBase;
@@ -112,11 +126,15 @@ background: linear-gradient(to bottom, #FF79DA 0%, #D675FF 73%, #9356DC 100%);
                             }
 
             .restaurantListItemName {
+                width: 100%;
+                margin-left: 1rem;
 
-                & > .checkHeart {
+                > .checkHeart {
                     @include checkHeart;
-                    align-content: flex-end;
-                    align-items: flex-end;
+                    margin-right: 1rem;
+                    display: flex;
+                    justify-content: flex-end;
+                    
                 }
                                    
                 
@@ -125,4 +143,37 @@ background: linear-gradient(to bottom, #FF79DA 0%, #D675FF 73%, #9356DC 100%);
             }
         }
     }
+}
+.footerSection {
+    background-color: rgb(61, 61, 61);
+    color : white;
+    padding: 1rem 0 1rem 1rem ;
+
+    .footerTitle {
+        font-family : $fontShrikhand;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .footerPartner {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .fas {
+            margin-right: 0.5rem;
+        }
+    }
+    .footerAbout {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        &> a {
+            
+            color :white;
+            text-decoration: none;
+         }
+    }
+    
+
 }
