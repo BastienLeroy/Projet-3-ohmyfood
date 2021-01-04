@@ -1,0 +1,130 @@
+body {
+  margin: auto;
+  max-width: 1280px;
+  width: 100%;
+}
+
+.container {
+  background-image: url(../Assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  width: 1280px;
+  height: 900px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container .headerLogo {
+  color: white;
+}
+
+.container .headerLogo {
+  font-size: 2rem;
+  font-family: "Shrikhand", cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .headerLocation {
+  color: white;
+  margin-right: 5rem;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.container .headerLocation .inputHeader {
+  border: none;
+  font-weight: bold;
+}
+
+.container .formContact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 500px;
+  background-image: #f4ebff;
+}
+
+.container .formContact .formContactName {
+  margin-top: 2rem;
+}
+
+.container .formContact .formContactMail {
+  margin-top: 2rem;
+}
+
+.container .formContact .formContactMsg {
+  height: 30%;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.footerSection {
+  font-family: "Roboto", sans-serif;
+  background-color: #3d3d3d;
+  color: white;
+  padding: 1rem 0 1rem 1rem;
+}
+
+.footerSection .footerTitle {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footerSection .footerPartner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footerSection .footerPartner .fas {
+  margin-right: 0.5rem;
+}
+
+.footerSection .footerAbout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footerSection .footerAbout > a {
+  color: white;
+  text-decoration: none;
+}
+/*# sourceMappingURL=stylesContact.css.map */

@@ -1,0 +1,67 @@
+@import "vars";
+@import "mixin";
+
+body {
+    margin: auto;
+    max-width: 1280px;
+    width: 100%;
+}
+.container {
+    background-image:url(../Assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) ;
+    width: 1280px;
+    height: 900px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+    .headerLogo {
+        color: white;
+    }
+    .headerLogo {
+        font-size: 2rem;
+        font-family: $fontShrikhand;
+        @include positionBlock;
+    }
+    .headerLocation {
+        color: white;
+        margin-right: 5rem;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        
+        .inputHeader {
+            border: none;
+            font-weight: bold;
+            
+        }
+    }
+    
+   
+    .formContact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 500px;
+        background-image: #f4ebff;
+    
+            .formContactName {
+                margin-top : 2rem;
+            }
+            .formContactMail {
+                margin-top : 2rem;
+            }
+            .formContactMsg {
+                height: 30%;
+                width: 100%;
+                margin-top : 2rem;
+    
+            }
+    }
+    
+}
+.footerSection {
+    font-family: $fontRoboto;
+    @include footerSection;
+}

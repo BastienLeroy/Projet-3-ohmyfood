@@ -28,6 +28,11 @@ body {
   top: 20px;
 }
 
+.headerLocation .inputHeader {
+  border: none;
+  font-weight: bold;
+}
+
 .intro {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
