@@ -12,24 +12,30 @@ body {
     height: 100vh;
     margin: 0 1rem 0 1rem;
     position: relative;
-}
 
+    .fa-angle-left {
+        color: rgb(190, 190, 190);
+        font-size: 2rem;
+    }
+    .headerLogo {
+        font-size: 2rem;
+        font-family: $fontShrikhand;
+        @include positionBlock;
+    }
+    .headerLocation {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        
 
-.headerLogo {
-    font-size: 2rem;
-    font-family: $fontShrikhand;
-    @include positionBlock;
-}
-.headerLocation {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    
-    .inputHeader {
-        border: none;
-        font-weight: bold;
+        .inputHeader {
+            border: none;
+            font-weight: bold;
+            background-color: transparent;
+        }
     }
 }
+
 
 .intro {
     flex-wrap: wrap;
@@ -131,6 +137,7 @@ body {
             flex-direction: row;
             background-color: white;
             
+            
         
             .restaurantListItemImg {
                 @include sizeImg;
@@ -139,6 +146,12 @@ body {
             .restaurantListItemName {
                 width: 100%;
                 margin-left: 1rem;
+
+                & > a  {
+                    text-decoration: none;
+                    color: black;
+                }
+                
 
                 > .checkHeart {
                     @include checkHeart;

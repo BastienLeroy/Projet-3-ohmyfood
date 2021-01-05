@@ -9,12 +9,18 @@ body {
 .container {
     background-image:url(../Assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) ;
     width: 1280px;
-    height: 900px;
+    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
-    
+    .fa-angle-left {
+        position: relative;
+        left: 20px;
+        top: 20px;
+        color: white;
+        font-size: 2rem;
+    }
     .headerLogo {
         color: white;
     }
@@ -24,15 +30,18 @@ body {
         @include positionBlock;
     }
     .headerLocation {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: -3rem;
         color: white;
-        margin-right: 5rem;
-        position: absolute;
-        right: 20px;
-        top: 20px;
         
         .inputHeader {
             border: none;
             font-weight: bold;
+            background: white;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+           
             
         }
     }
@@ -45,7 +54,8 @@ body {
         justify-content: center;
         height: 500px;
         background-image: #f4ebff;
-    
+
+           
             .formContactName {
                 margin-top : 2rem;
             }
@@ -53,10 +63,27 @@ body {
                 margin-top : 2rem;
             }
             .formContactMsg {
+                display: flex;
+                justify-content: center;
                 height: 30%;
                 width: 100%;
                 margin-top : 2rem;
     
+            }
+            .btnSubmit {
+                font-family: $fontRoboto;
+                font-size: 1.2rem;
+                width: 100px;
+                height: 30px;
+                color: white;
+                border : 1px solid $backgroundPrimary;
+                border-radius: 60px ;
+                background: #FF79DA;
+                background: -moz-linear-gradient(top, #FF79DA 0%, #D675FF 73%, #9356DC 100%);
+                background: -webkit-linear-gradient(top, #FF79DA 0%, #D675FF 73%, #9356DC 100%);
+                background: linear-gradient(to bottom, #FF79DA 0%, #D675FF 73%, #9356DC 100%);
+                box-shadow: 5px 5px 20px $boxShadowColor;
+                margin-top: 1rem;
             }
     }
     

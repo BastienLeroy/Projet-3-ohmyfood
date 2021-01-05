@@ -11,7 +11,12 @@ body {
   position: relative;
 }
 
-.headerLogo {
+.container .fa-angle-left {
+  color: #bebebe;
+  font-size: 2rem;
+}
+
+.container .headerLogo {
   font-size: 2rem;
   font-family: "Shrikhand", cursive;
   display: -webkit-box;
@@ -22,15 +27,16 @@ body {
           justify-content: center;
 }
 
-.headerLocation {
+.container .headerLocation {
   position: absolute;
   right: 20px;
   top: 20px;
 }
 
-.headerLocation .inputHeader {
+.container .headerLocation .inputHeader {
   border: none;
   font-weight: bold;
+  background-color: transparent;
 }
 
 .intro {
@@ -207,6 +213,11 @@ body {
 .restaurant .restaurantList .restaurantListItem .restaurantListItemName {
   width: 100%;
   margin-left: 1rem;
+}
+
+.restaurant .restaurantList .restaurantListItem .restaurantListItemName > a {
+  text-decoration: none;
+  color: black;
 }
 
 .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart {

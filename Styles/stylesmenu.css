@@ -1,0 +1,297 @@
+body {
+  margin: auto;
+  max-width: 1280px;
+  width: 100%;
+}
+
+.container {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  margin: 0 1rem 0 1rem;
+  position: relative;
+}
+
+.container .fa-angle-left {
+  color: #bebebe;
+  font-size: 2rem;
+}
+
+.container .headerLogo {
+  font-size: 2rem;
+  font-family: "Shrikhand", cursive;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .headerLocation {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.container .headerLocation .inputHeader {
+  border: none;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+main {
+  position: relative;
+  height: 100vh;
+}
+
+main .cardMenuImg {
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 350px;
+}
+
+main .cardMenu {
+  margin-top: -3rem;
+  background-color: #f8f8f8;
+  position: absolute;
+  border-radius: 40px 40px 0 0;
+  width: 100%;
+  height: 620px;
+}
+
+main .cardMenu .cardMenuTitle {
+  font-family: "Shrikhand", cursive;
+  margin-left: 1rem;
+}
+
+main .cardMenu .cardMenuDish {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main .cardMenu .cardMenuDish .cardMenuDishEntrance {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .cardMenu .cardMenuDish .cardMenuDishEntrance .cardMenuDishEntranceTitle {
+  color: #838383;
+}
+
+main .cardMenu .cardMenuDish .cardMenuDishEntrance .cardMenuDishEntranceChoice {
+  background-color: white;
+  width: 300px;
+  height: 100px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+main .cardMenu .cardMenuDish .cardMenuDishEntrance .cardMenuDishEntranceChoice > h4 {
+  margin: 0.5rem 0 0 0.5rem;
+}
+
+main .cardMenu .cardMenuDish .cardMenuDishEntrance .cardMenuDishEntranceChoice > p {
+  text-align: justify;
+  margin: 1rem 0 0 0.5rem;
+}
+
+main .cardMenu .cardMenuDish .cardMenuDishEntrance .cardMenuDishEntranceChoice .rate {
+  position: absolute;
+  right: 10px;
+  margin-top: 2.5rem;
+}
+
+main .cardMenu .cardMenuDish .cardMenuDishMiddle {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .cardMenu .cardMenuDish .cardMenuDishMiddle .cardMenuDishMiddleTitle {
+  color: #838383;
+}
+
+main .cardMenu .cardMenuDish .cardMenuDishMiddle .cardMenuDishMiddleChoice {
+  background-color: white;
+  width: 300px;
+  height: 100px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+main .cardMenu .cardMenuDish .cardMenuDishMiddle .cardMenuDishMiddleChoice > h4 {
+  margin: 0.5rem 0 0 0.5rem;
+}
+
+main .cardMenu .cardMenuDish .cardMenuDishMiddle .cardMenuDishMiddleChoice > p {
+  width: 60%;
+  text-align: left;
+  margin: 1rem 0 0 0.5rem;
+}
+
+main .cardMenu .cardMenuDish .cardMenuDishMiddle .cardMenuDishMiddleChoice .rate {
+  position: absolute;
+  right: 10px;
+  margin-top: 2.5rem;
+}
+
+main .cardMenu .cardMenuDish .cardMenuDishDessert {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .cardMenu .cardMenuDish .cardMenuDishDessert .cardMenuDishDessertTitle {
+  color: #838383;
+}
+
+main .cardMenu .cardMenuDish .cardMenuDishDessert .cardMenuDishDessertChoice {
+  background-color: white;
+  width: 300px;
+  height: 100px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+main .cardMenu .cardMenuDish .cardMenuDishDessert .cardMenuDishDessertChoice > h4 {
+  margin: 0.5rem 0 0 0.5rem;
+}
+
+main .cardMenu .cardMenuDish .cardMenuDishDessert .cardMenuDishDessertChoice > p {
+  text-align: justify;
+  margin: 1rem 0 0 0.5rem;
+}
+
+main .cardMenu .cardMenuDish .cardMenuDishDessert .cardMenuDishDessertChoice .rate {
+  position: absolute;
+  right: 10px;
+  margin-top: 2.5rem;
+}
+
+main .btnOrder {
+  position: absolute;
+  bottom: 10%;
+  left: 38%;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  width: 300px;
+  height: 60px;
+  color: white;
+  border: 1px solid #f2f2f2;
+  border-radius: 60px;
+  background: #FF79DA;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), color-stop(73%, #D675FF), to(#9356DC));
+  background: linear-gradient(to bottom, #FF79DA 0%, #D675FF 73%, #9356DC 100%);
+  -webkit-box-shadow: 5px 5px 20px #d3d3d3;
+          box-shadow: 5px 5px 20px #d3d3d3;
+  cursor: pointer;
+}
+
+.footerSection {
+  background-color: #3d3d3d;
+  color: white;
+  padding: 1rem 0 1rem 1rem;
+}
+
+.footerSection .footerTitle {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footerSection .footerPartner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footerSection .footerPartner .fas {
+  margin-right: 0.5rem;
+}
+
+.footerSection .footerAbout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footerSection .footerAbout > a {
+  color: white;
+  text-decoration: none;
+}
+/*# sourceMappingURL=stylesmenu.css.map */
