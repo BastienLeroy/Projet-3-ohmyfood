@@ -21,7 +21,7 @@
         </header>
 
         <main>
-            <div class="formContact">
+            <form class="formContact">
                 <div class="formContactName">
                     <label for="name"></label>
                     <input placeholder="Votre Nom" type="text" id="name" name="user_name">
@@ -34,12 +34,10 @@
                     <label for="msg"></label>
                     <textarea placeholder="Votre message..." rows="9" cols="161" id="msg" name="user_message"></textarea>
                 </div>
-                <a href="#">
-                    <button class="btnSubmit">
-                        Envoyer !
-                    </button>
-                </a>
-            </div>  
+                <div>
+                    <input class="btnSubmit" type="submit" value="Envoyer !"/>
+                </div>
+            </form>
         </main>
     </div>
     <footer>

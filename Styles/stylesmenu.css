@@ -66,6 +66,13 @@ main .cardMenu {
   border-radius: 40px 40px 0 0;
   width: 100%;
   height: 620px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 main .cardMenu .cardMenuTitle {
@@ -86,8 +93,7 @@ main .cardMenu .cardMenuDish {
           justify-content: space-evenly;
 }
 
-main .cardMenu .cardMenuDish .cardMenuDishEntrance {
-  position: relative;
+main .cardMenu .cardMenuDish .cardMenuDishColumn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,11 +103,20 @@ main .cardMenu .cardMenuDish .cardMenuDishEntrance {
           flex-direction: column;
 }
 
-main .cardMenu .cardMenuDish .cardMenuDishEntrance .cardMenuDishEntranceTitle {
+main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnTitle {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   color: #838383;
+  margin-bottom: 0.5rem;
 }
 
-main .cardMenu .cardMenuDish .cardMenuDishEntrance .cardMenuDishEntranceChoice {
+main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnTitle:hover {
+  cursor: pointer;
+  border-bottom: 3px solid #99e2d0;
+}
+
+main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice {
   background-color: white;
   width: 300px;
   height: 100px;
@@ -109,123 +124,72 @@ main .cardMenu .cardMenuDish .cardMenuDishEntrance .cardMenuDishEntranceChoice {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 1rem;
 }
 
-main .cardMenu .cardMenuDish .cardMenuDishEntrance .cardMenuDishEntranceChoice > h4 {
-  margin: 0.5rem 0 0 0.5rem;
+main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice .textContent {
+  max-width: 220px;
 }
 
-main .cardMenu .cardMenuDish .cardMenuDishEntrance .cardMenuDishEntranceChoice > p {
-  text-align: justify;
-  margin: 1rem 0 0 0.5rem;
+main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice .textContent > h4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
-main .cardMenu .cardMenuDish .cardMenuDishEntrance .cardMenuDishEntranceChoice .rate {
-  position: absolute;
-  right: 10px;
-  margin-top: 2.5rem;
+main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice .textContent > p {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
-main .cardMenu .cardMenuDish .cardMenuDishMiddle {
-  position: relative;
+main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice .rate {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
 }
 
-main .cardMenu .cardMenuDish .cardMenuDishMiddle .cardMenuDishMiddleTitle {
-  color: #838383;
+main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice .testBox {
+  display: none;
 }
 
-main .cardMenu .cardMenuDish .cardMenuDishMiddle .cardMenuDishMiddleChoice {
-  background-color: white;
-  width: 300px;
-  height: 100px;
-  border-radius: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-bottom: 1rem;
+main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover {
+  cursor: pointer;
 }
 
-main .cardMenu .cardMenuDish .cardMenuDishMiddle .cardMenuDishMiddleChoice > h4 {
-  margin: 0.5rem 0 0 0.5rem;
+main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover .textContent {
+  width: 150px;
 }
 
-main .cardMenu .cardMenuDish .cardMenuDishMiddle .cardMenuDishMiddleChoice > p {
-  width: 60%;
-  text-align: left;
-  margin: 1rem 0 0 0.5rem;
+main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover .testBox {
+  display: block;
+  background-color: #99e2d0;
+  width: 80px;
+  /*
+                            background-color: $colorSecondary;
+                            transform: translate( 0, 100px);
+                            transition: transform 330ms ease-in-out; 
+                            width: 100px;
+                            height: 100px;
+                            */
 }
 
-main .cardMenu .cardMenuDish .cardMenuDishMiddle .cardMenuDishMiddleChoice .rate {
-  position: absolute;
-  right: 10px;
-  margin-top: 2.5rem;
-}
-
-main .cardMenu .cardMenuDish .cardMenuDishDessert {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-main .cardMenu .cardMenuDish .cardMenuDishDessert .cardMenuDishDessertTitle {
-  color: #838383;
-}
-
-main .cardMenu .cardMenuDish .cardMenuDishDessert .cardMenuDishDessertChoice {
-  background-color: white;
-  width: 300px;
-  height: 100px;
-  border-radius: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-bottom: 1rem;
-}
-
-main .cardMenu .cardMenuDish .cardMenuDishDessert .cardMenuDishDessertChoice > h4 {
-  margin: 0.5rem 0 0 0.5rem;
-}
-
-main .cardMenu .cardMenuDish .cardMenuDishDessert .cardMenuDishDessertChoice > p {
-  text-align: justify;
-  margin: 1rem 0 0 0.5rem;
-}
-
-main .cardMenu .cardMenuDish .cardMenuDishDessert .cardMenuDishDessertChoice .rate {
-  position: absolute;
-  right: 10px;
-  margin-top: 2.5rem;
-}
-
-main .btnOrder {
-  position: absolute;
-  bottom: 10%;
-  left: 38%;
+main .cardMenu .btnOrder {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
   width: 300px;

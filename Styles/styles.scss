@@ -61,6 +61,10 @@ body {
         background: linear-gradient(to bottom, #FF79DA 0%, #D675FF 73%, #9356DC 100%);
         box-shadow: 5px 5px 20px $boxShadowColor;
         cursor: pointer;
+
+        &:focus {
+            outline: none;
+        }
     }
 }
 .step {

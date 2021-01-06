@@ -85,6 +85,10 @@ body {
   cursor: pointer;
 }
 
+.intro .introButton:focus {
+  outline: none;
+}
+
 .step {
   display: -webkit-box;
   display: -ms-flexbox;
