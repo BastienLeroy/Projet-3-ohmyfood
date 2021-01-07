@@ -72,7 +72,7 @@ main {
             .cardMenuDishColumn {
                 display: flex;
                 flex-direction: column;
-                
+                                
                 .cardMenuDishColumnTitle {
                     width: fit-content;
                     color: rgb(131, 131, 131);
@@ -91,6 +91,10 @@ main {
                     display: flex;
                     justify-content: space-between;
                     margin-bottom: 1rem;
+                    transform: scale(1);
+                    animation-name: slideY;
+                    animation-duration: 2000ms;
+                    transform-origin : top;
     
                     .textContent {
                         max-width: 220px;
@@ -108,7 +112,7 @@ main {
                             overflow: hidden;
                         }
                     }
-                    .rate {
+                    .price {
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -124,16 +128,61 @@ main {
                             width: 150px;
                         }
                         .testBox {
-                            display: block;
-                            background-color: $colorSecondary;
-                            width: 80px;
-                            /*
-                            background-color: $colorSecondary;
-                            transform: translate( 0, 100px);
-                            transition: transform 330ms ease-in-out; 
-                            width: 100px;
-                            height: 100px;
-                            */
+                            align-self : flex-end;
+
+                            cursor : pointer;
+                                display : flex;
+                                justify-content : center;
+                                align-items : center;
+                                background-color : $colorSecondary;
+                                width : 80px;
+                                height : 100px;
+                                border-radius : 0 20px 20px 0;
+
+                                    &.testBox{
+                                        transform: scale(1);
+                                        animation-name: slideX;
+                                        animation-duration: 300ms;
+                                        transform-origin : 100%;
+                                    }
+                            .fas {
+                                font-size : 2.5rem;
+                                background-color : white;
+                                border-radius : 50%;
+                                color : $colorSecondary;
+                                border : 10px solid white;
+                                -webkit-animation: rotate 300ms linear;
+                                }
+                    
+                            @keyframes slideX {
+                                0% {
+                                    transform: scaleX(0);
+                                    }
+                                    
+                                100% {
+                                    transform: scaleX(1);
+                                }
+                            }
+                            @keyframes slideY {
+                                0% {
+                                    transform: scaleY(0);
+                                    opacity: 0;
+                                    }
+                                100% {
+                                    transform: scaleY(1);
+                                    opacity: 1;
+                                }
+                            }
+                            @keyframes rotate {
+                                100% {
+                                    -webkit-transform: rotate(0deg);
+                                    transform: rotate(0deg);
+                                }
+                                0% {
+                                    -webkit-transform: rotate(360deg);
+                                    transform: rotate(360deg);
+                                }
+                            }
                         }
                     }
                 }
@@ -158,7 +207,36 @@ main {
     }
 }
 
-
+.cardMenuDishColumnChoice1 {
+    animation-delay: 200ms
+}
+.cardMenuDishColumnChoice2 {
+    animation-delay: 400ms
+}
+.cardMenuDishColumnChoice3 {
+    animation-delay: 600ms
+}
+.cardMenuDishColumnChoice4 {
+    animation-delay: 800ms
+}
+.cardMenuDishColumnChoice5 {
+    animation-delay: 1000ms
+}
+.cardMenuDishColumnChoice6 {
+    animation-delay: 1200ms
+}
+.cardMenuDishColumnChoice7 {
+    animation-delay: 1400ms
+}
+.cardMenuDishColumnChoice8 {
+    animation-delay: 1600ms
+}
+.cardMenuDishColumnChoice9 {
+    animation-delay: 1800ms
+}
+.cardMenuDishColumnChoice10 {
+    animation-delay: 2000ms
+}
 
 
 

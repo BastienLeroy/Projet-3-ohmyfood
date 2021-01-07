@@ -128,6 +128,14 @@ main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 1rem;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-animation-name: slideY;
+          animation-name: slideY;
+  -webkit-animation-duration: 2000ms;
+          animation-duration: 2000ms;
+  -webkit-transform-origin: top;
+          transform-origin: top;
 }
 
 main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice .textContent {
@@ -148,7 +156,7 @@ main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice .text
   overflow: hidden;
 }
 
-main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice .rate {
+main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice .price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -174,16 +182,112 @@ main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover
 }
 
 main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover .testBox {
-  display: block;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #99e2d0;
   width: 80px;
-  /*
-                            background-color: $colorSecondary;
-                            transform: translate( 0, 100px);
-                            transition: transform 330ms ease-in-out; 
-                            width: 100px;
-                            height: 100px;
-                            */
+  height: 100px;
+  border-radius: 0 20px 20px 0;
+}
+
+main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover .testBox.testBox {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-animation-name: slideX;
+          animation-name: slideX;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
+  -webkit-transform-origin: 100%;
+          transform-origin: 100%;
+}
+
+main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover .testBox .fas {
+  font-size: 2.5rem;
+  background-color: white;
+  border-radius: 50%;
+  color: #99e2d0;
+  border: 10px solid white;
+  -webkit-animation: rotate 300ms linear;
+}
+
+@-webkit-keyframes slideX {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@keyframes slideX {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+}
+
+@-webkit-keyframes slideY {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideY {
+  0% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  0% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  0% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
 main .cardMenu .btnOrder {
@@ -203,6 +307,56 @@ main .cardMenu .btnOrder {
   -webkit-box-shadow: 5px 5px 20px #d3d3d3;
           box-shadow: 5px 5px 20px #d3d3d3;
   cursor: pointer;
+}
+
+.cardMenuDishColumnChoice1 {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+
+.cardMenuDishColumnChoice2 {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+.cardMenuDishColumnChoice3 {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+
+.cardMenuDishColumnChoice4 {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+}
+
+.cardMenuDishColumnChoice5 {
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+}
+
+.cardMenuDishColumnChoice6 {
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
+}
+
+.cardMenuDishColumnChoice7 {
+  -webkit-animation-delay: 1400ms;
+          animation-delay: 1400ms;
+}
+
+.cardMenuDishColumnChoice8 {
+  -webkit-animation-delay: 1600ms;
+          animation-delay: 1600ms;
+}
+
+.cardMenuDishColumnChoice9 {
+  -webkit-animation-delay: 1800ms;
+          animation-delay: 1800ms;
+}
+
+.cardMenuDishColumnChoice10 {
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
 }
 
 .footerSection {
