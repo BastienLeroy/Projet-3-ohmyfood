@@ -248,6 +248,11 @@ main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover
             transform: scaleY(0);
     opacity: 0;
   }
+  50% {
+    -webkit-transform: scaleY(0.5);
+            transform: scaleY(0.5);
+    opacity: 0;
+  }
   100% {
     -webkit-transform: scaleY(1);
             transform: scaleY(1);
@@ -261,6 +266,11 @@ main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover
             transform: scaleY(0);
     opacity: 0;
   }
+  50% {
+    -webkit-transform: scaleY(0.5);
+            transform: scaleY(0.5);
+    opacity: 0;
+  }
   100% {
     -webkit-transform: scaleY(1);
             transform: scaleY(1);
@@ -268,7 +278,9 @@ main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover
   }
 }
 
-@-webkit-keyframes rotate {
+@-webkit-keyframes identifier {}
+
+@keyframes identifier {}@-webkit-keyframes rotate {
   100% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -277,9 +289,7 @@ main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
-}
-
-@keyframes rotate {
+}@keyframes rotate {
   100% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);

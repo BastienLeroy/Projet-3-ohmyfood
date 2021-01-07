@@ -84,6 +84,7 @@ main {
                     }
                 }
                 .cardMenuDishColumnChoice {
+                    
                     background-color: white;
                     width: 300px;
                     height: 100px;
@@ -168,10 +169,17 @@ main {
                                     transform: scaleY(0);
                                     opacity: 0;
                                     }
+                                50% {
+                                    transform: scaleY(0.5);
+                                    opacity : 0;
+                                }
                                 100% {
                                     transform: scaleY(1);
                                     opacity: 1;
                                 }
+                            }
+                            @keyframes identifier {
+                                
                             }
                             @keyframes rotate {
                                 100% {
