@@ -15,7 +15,7 @@
     flex-direction: row;
     justify-content: space-evenly;
 }
-@mixin checkHeart {
+@mixin checkHeart1 {
 
     @keyframes heart {0%, 17% {font-size: 0}}
    
@@ -25,7 +25,8 @@
     }
     
     #heart1Label, #heart2Label, #heart3Label, #heart4Label {
-        color: #aab8c2;
+        color: white;
+        background-color: white;
         cursor: pointer;
         font-size: 2em;
         align-self: center;  

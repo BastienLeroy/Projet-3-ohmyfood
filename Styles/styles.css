@@ -253,6 +253,7 @@ body {
 
 .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart1Label, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart2Label, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart3Label, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart4Label {
   color: #aab8c2;
+  background-color: white;
   cursor: pointer;
   font-size: 2em;
   -ms-flex-item-align: center;
@@ -283,6 +284,33 @@ body {
   will-change: font-size;
   -webkit-animation: heart 1s cubic-bezier(0.17, 0.89, 0.32, 1.49);
           animation: heart 1s cubic-bezier(0.17, 0.89, 0.32, 1.49);
+}
+
+.coeur {
+  -webkit-animation: magic 3s infinite;
+          animation: magic 3s infinite;
+}
+
+@-webkit-keyframes magic {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes magic {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
 }
 
 .footerSection {

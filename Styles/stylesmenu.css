@@ -128,18 +128,11 @@ main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 1rem;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-animation-name: slideY;
-          animation-name: slideY;
-  -webkit-animation-duration: 2000ms;
-          animation-duration: 2000ms;
-  -webkit-transform-origin: top;
-          transform-origin: top;
 }
 
 main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice .textContent {
   max-width: 220px;
+  margin-left: 0.2rem;
 }
 
 main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice .textContent > h4 {
@@ -184,6 +177,14 @@ main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover
 main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover .testBox {
   -ms-flex-item-align: end;
       align-self: flex-end;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-animation-name: slideX;
+          animation-name: slideX;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
+  -webkit-transform-origin: 100%;
+          transform-origin: 100%;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -249,9 +250,9 @@ main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover
     opacity: 0;
   }
   50% {
-    -webkit-transform: scaleY(0.5);
-            transform: scaleY(0.5);
-    opacity: 0;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    opacity: 0.2;
   }
   100% {
     -webkit-transform: scaleY(1);
@@ -267,9 +268,9 @@ main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover
     opacity: 0;
   }
   50% {
-    -webkit-transform: scaleY(0.5);
-            transform: scaleY(0.5);
-    opacity: 0;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    opacity: 0.2;
   }
   100% {
     -webkit-transform: scaleY(1);
@@ -278,9 +279,18 @@ main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover
   }
 }
 
-@-webkit-keyframes identifier {}
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  0% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 
-@keyframes identifier {}@-webkit-keyframes rotate {
+@keyframes rotate {
   100% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -289,14 +299,23 @@ main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
-}@keyframes rotate {
-  100% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
   }
-  0% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
@@ -319,54 +338,37 @@ main .cardMenu .btnOrder {
   cursor: pointer;
 }
 
-.cardMenuDishColumnChoice1 {
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
+.cardMenuDishColumn1 {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-animation-name: slideY;
+          animation-name: slideY;
+  -webkit-animation-duration: 400ms;
+          animation-duration: 400ms;
+  -webkit-transform-origin: top;
+          transform-origin: top;
 }
 
-.cardMenuDishColumnChoice2 {
-  -webkit-animation-delay: 400ms;
-          animation-delay: 400ms;
+.cardMenuDishColumn2 {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-animation-name: slideY;
+          animation-name: slideY;
+  -webkit-animation-duration: 900ms;
+          animation-duration: 900ms;
+  -webkit-transform-origin: top;
+          transform-origin: top;
 }
 
-.cardMenuDishColumnChoice3 {
-  -webkit-animation-delay: 600ms;
-          animation-delay: 600ms;
-}
-
-.cardMenuDishColumnChoice4 {
-  -webkit-animation-delay: 800ms;
-          animation-delay: 800ms;
-}
-
-.cardMenuDishColumnChoice5 {
-  -webkit-animation-delay: 1000ms;
-          animation-delay: 1000ms;
-}
-
-.cardMenuDishColumnChoice6 {
-  -webkit-animation-delay: 1200ms;
-          animation-delay: 1200ms;
-}
-
-.cardMenuDishColumnChoice7 {
-  -webkit-animation-delay: 1400ms;
-          animation-delay: 1400ms;
-}
-
-.cardMenuDishColumnChoice8 {
-  -webkit-animation-delay: 1600ms;
-          animation-delay: 1600ms;
-}
-
-.cardMenuDishColumnChoice9 {
-  -webkit-animation-delay: 1800ms;
-          animation-delay: 1800ms;
-}
-
-.cardMenuDishColumnChoice10 {
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms;
+.cardMenuDishColumn3 {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-animation-name: slideY;
+          animation-name: slideY;
+  -webkit-animation-duration: 1200ms;
+          animation-duration: 1200ms;
+  -webkit-transform-origin: top;
+          transform-origin: top;
 }
 
 .footerSection {

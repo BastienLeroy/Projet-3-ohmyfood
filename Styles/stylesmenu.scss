@@ -92,13 +92,10 @@ main {
                     display: flex;
                     justify-content: space-between;
                     margin-bottom: 1rem;
-                    transform: scale(1);
-                    animation-name: slideY;
-                    animation-duration: 2000ms;
-                    transform-origin : top;
-    
+                    
                     .textContent {
                         max-width: 220px;
+                        margin-left: 0.2rem;
                         
                         > h4 {
                             display: -webkit-box;
@@ -128,8 +125,13 @@ main {
                         .textContent {
                             width: 150px;
                         }
+                    
                         .testBox {
                             align-self : flex-end;
+                            transform: scale(1);
+                            animation-name: slideX;
+                            animation-duration: 300ms;
+                            transform-origin : 100%;
 
                             cursor : pointer;
                                 display : flex;
@@ -168,19 +170,17 @@ main {
                                 0% {
                                     transform: scaleY(0);
                                     opacity: 0;
-                                    }
+                                }
                                 50% {
-                                    transform: scaleY(0.5);
-                                    opacity : 0;
+                                    transform: scaleY(0);
+                                    opacity: 0.2;
                                 }
                                 100% {
                                     transform: scaleY(1);
                                     opacity: 1;
                                 }
                             }
-                            @keyframes identifier {
-                                
-                            }
+                            
                             @keyframes rotate {
                                 100% {
                                     -webkit-transform: rotate(0deg);
@@ -189,6 +189,14 @@ main {
                                 0% {
                                     -webkit-transform: rotate(360deg);
                                     transform: rotate(360deg);
+                                }
+                            }
+                            @keyframes fadein {
+                                from {
+                                    opacity:0;
+                                }
+                                to {
+                                    opacity:1;
                                 }
                             }
                         }
@@ -215,38 +223,27 @@ main {
     }
 }
 
-.cardMenuDishColumnChoice1 {
-    animation-delay: 200ms
-}
-.cardMenuDishColumnChoice2 {
-    animation-delay: 400ms
-}
-.cardMenuDishColumnChoice3 {
-    animation-delay: 600ms
-}
-.cardMenuDishColumnChoice4 {
-    animation-delay: 800ms
-}
-.cardMenuDishColumnChoice5 {
-    animation-delay: 1000ms
-}
-.cardMenuDishColumnChoice6 {
-    animation-delay: 1200ms
-}
-.cardMenuDishColumnChoice7 {
-    animation-delay: 1400ms
-}
-.cardMenuDishColumnChoice8 {
-    animation-delay: 1600ms
-}
-.cardMenuDishColumnChoice9 {
-    animation-delay: 1800ms
-}
-.cardMenuDishColumnChoice10 {
-    animation-delay: 2000ms
-}
+.cardMenuDishColumn1 {
+    transform: scale(1);
+    animation-name: slideY;
+    animation-duration: 400ms;
+    transform-origin : top;
 
+}
+.cardMenuDishColumn2 {
+    transform: scale(1);
+    animation-name: slideY;
+    animation-duration: 900ms;
+    transform-origin : top;
 
+}
+.cardMenuDishColumn3 {
+    transform: scale(1);
+    animation-name: slideY;
+    animation-duration: 1200ms;
+    transform-origin : top;
+
+}
 
 .footerSection {
     @include footerSection;
