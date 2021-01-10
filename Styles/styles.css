@@ -120,7 +120,7 @@ body {
   -webkit-box-shadow: 5px 5px 20px #d3d3d3;
           box-shadow: 5px 5px 20px #d3d3d3;
   height: 75px;
-  width: calc(1200px / 3);
+  width: calc(1000px / 3);
   background-color: #f2f2f2;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -193,7 +193,8 @@ body {
   -webkit-box-shadow: 2px 2px 10px grey;
           box-shadow: 2px 2px 10px grey;
   border-radius: 1rem 1rem 1rem 1rem;
-  width: 600px;
+  width: 500px;
+  height: 150px;
   margin-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -210,7 +211,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 1rem 0 0 1rem;
-  width: 300px;
+  width: 250px;
   height: 150px;
 }
 
@@ -235,82 +236,72 @@ body {
 }
 
 @-webkit-keyframes heart {
-  0%, 17% {
+  0%, 5% {
     font-size: 0;
   }
 }
 
 @keyframes heart {
-  0%, 17% {
+  0%, 5% {
     font-size: 0;
   }
 }
 
-.restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart1, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart2, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart3, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart4 {
+.restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart1, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart2, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart3, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart4, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart5, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart6, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart7, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart8 {
   position: absolute;
   left: -100vw;
 }
 
 .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart1Label, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart2Label, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart3Label, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart4Label {
-  color: #aab8c2;
+  position: absolute;
+  color: grey;
   background-color: white;
   cursor: pointer;
   font-size: 2em;
+  z-index: 1;
+}
+
+.restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart5Label, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart6Label, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart7Label, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart8Label {
+  position: relative;
+  bottom: 13px;
+  left: 5px;
+  font-size: 2.7em;
+  color: transparent;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  -webkit-transition: color 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out;
+  cursor: pointer;
+  z-index: 4;
 }
 
 .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart1Label:hover, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart2Label:hover, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart3Label:hover, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart4Label:hover {
   color: grey;
+  cursor: pointer;
 }
 
-.restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart1Label::-moz-selection, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart2Label::-moz-selection, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart3Label::-moz-selection, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart4Label::-moz-selection {
-  color: none;
+.restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart1Label::-moz-selection, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart2Label::-moz-selection, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart3Label::-moz-selection, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart4Label::-moz-selection, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart5Label::-moz-selection, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart6Label::-moz-selection, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart7Label::-moz-selection, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart8Label::-moz-selection {
+  color: transparent;
   background: transparent;
 }
 
-.restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart1Label::selection, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart2Label::selection, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart3Label::selection, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart4Label::selection {
-  color: none;
+.restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart1Label::selection, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart2Label::selection, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart3Label::selection, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart4Label::selection, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart5Label::selection, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart6Label::selection, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart7Label::selection, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart8Label::selection {
+  color: transparent;
   background: transparent;
 }
 
 .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart1:checked + label, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart2:checked + label, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart3:checked + label, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart4:checked + label {
+  color: transparent;
+  background: transparent;
+}
+
+.restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart5:checked + label, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart6:checked + label, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart7:checked + label, .restaurant .restaurantList .restaurantListItem .restaurantListItemName > .checkHeart #heart8:checked + label {
+  position: relative;
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   will-change: font-size;
-  -webkit-animation: heart 1s cubic-bezier(0.17, 0.89, 0.32, 1.49);
-          animation: heart 1s cubic-bezier(0.17, 0.89, 0.32, 1.49);
-}
-
-.coeur {
-  -webkit-animation: magic 3s infinite;
-          animation: magic 3s infinite;
-}
-
-@-webkit-keyframes magic {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-}
-
-@keyframes magic {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  100% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
+  -webkit-animation: heart 200ms;
+          animation: heart 200ms;
 }
 
 .footerSection {

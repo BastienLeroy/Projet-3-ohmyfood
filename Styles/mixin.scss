@@ -7,7 +7,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 1rem 0 0 1rem ;
-    width: 300px;
+    width: 250px;
     height: 150px;
 }
 @mixin positionBase {
@@ -89,7 +89,14 @@
         
     
     }
+@mixin HeartValidate {
     
-    
-    
+        .checkHeart {
+            position: absolute;
+        }
+@keyframes heart {0%, 5% {font-size: 0}}
 
+.checkHeart {
+  position: absolute;
+}
+}

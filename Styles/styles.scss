@@ -1,5 +1,5 @@
 @import "vars";
-@import "mixin";
+@import "mixin"; 
 
 body {
     margin: auto;
@@ -77,11 +77,11 @@ body {
         
         .stepListItem {
             position: relative;
-            border: 1px$backgroundPrimary solid ;
+            border: 1px $backgroundPrimary solid ;
             border-radius : 20px;
             box-shadow: 5px 5px 20px $boxShadowColor;
             height: 75px;
-            width: calc(1200px / 3);
+            width: calc(1000px / 3);
             background-color:$backgroundPrimary;
             display: flex;
             justify-content: center;
@@ -135,7 +135,8 @@ body {
         .restaurantListItem {
             box-shadow: 2px 2px 10px grey;
             border-radius: 1rem 1rem 1rem 1rem;
-            width: 600px;
+            width: 500px;
+            height: 150px;
             margin-top: 2rem;
             display : flex;
             flex-direction: row;
@@ -143,7 +144,7 @@ body {
             
             
         
-            .restaurantListItemImg {
+            .restaurantListItemImg  {
                 @include sizeImg;
                             }
 
@@ -158,18 +159,80 @@ body {
                 
 
                 > .checkHeart {
-                    @include checkHeart;
+                   
                     margin-right: 1rem;
                     display: flex;
                     justify-content: flex-end;
-                    
+
+
+                    @keyframes heart {0%, 5% {font-size: 0}}
+
+                        #heart1, #heart2, #heart3, #heart4, #heart5, #heart6, #heart7, #heart8  {
+                                position: absolute;
+                                left: -100vw;
+                            }
+                            
+                            #heart1Label, #heart2Label, #heart3Label, #heart4Label {
+                                position: absolute;
+                                color: grey;
+                                background-color: white;
+                                cursor: pointer;
+                                font-size: 2em;
+                                z-index:1;
+                                
+                                
+                            }
+                            #heart5Label, #heart6Label, #heart7Label, #heart8Label {
+                                position : relative;
+                                bottom : 13px;
+                                left: 5px;
+                                font-size: 2.7em;
+                                color : transparent;
+                                align-self: center; 
+                                cursor: pointer; 
+                                z-index:4;
+                            }
+                            
+                            #heart1Label:hover, #heart2Label:hover, #heart3Label:hover, #heart4Label:hover {
+                                color: grey;
+                                cursor: pointer;
+                            }
+                            
+                            #heart1Label::selection, #heart2Label::selection, #heart3Label::selection, #heart4Label::selection, #heart5Label::selection, #heart6Label::selection, #heart7Label::selection, #heart8Label::selection {
+                                color: transparent;
+                                background: transparent;
+                            }
+                            
+                            #heart1:checked + label, #heart2:checked + label, #heart3:checked + label, #heart4:checked + label {
+                                color: transparent;
+                                background: transparent;
+                            }
+
+                            #heart5:checked + label, #heart6:checked + label, #heart7:checked + label, #heart8:checked + label{
+                                position : relative;
+                                background: -webkit-linear-gradient(#9356DC, #FF79DA);
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                                will-change: font-size;
+                                animation: heart 200ms ;
+                                }
+
+                                
+                        }
+
+
+                                            
                 }
             }
         }
     }
-}
+
 
 .footerSection {
     @include footerSection;
 }
+
+
+
+
 
