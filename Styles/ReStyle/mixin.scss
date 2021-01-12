@@ -2,20 +2,19 @@
     display: flex;
     justify-content: center;
 }
+
 @mixin sizeImg {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 1rem 0 0 1rem ;
-    width: 250px;
-    height: 150px;
 }
+
 @mixin positionBase {
     display : flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
-
 
 @mixin checkHeart1 {
 
@@ -81,9 +80,6 @@
     }
         
 }
-                                           
-
-    
 
 @mixin footerSection {
     background-color: rgb(61, 61, 61);
@@ -109,9 +105,9 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        &> a {
+        & > a {
             color :white;
             text-decoration: none;
-            }
+        }
     }
 }

@@ -63,6 +63,16 @@ main {
         .cardMenuTitle{
             font-family: $fontShrikhand;
             margin-left: 1rem;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+        }
+        .checkHeart {
+            @include checkHeart1;
+            margin-left: 20px;
+            margin-bottom: 7px;
+            display: flex;
+            justify-content: flex-end;
         }
         .cardMenuDish {
             display: flex;

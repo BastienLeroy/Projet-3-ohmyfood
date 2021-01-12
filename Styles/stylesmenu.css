@@ -10,29 +10,21 @@ body {
   margin: 0 1rem 0 1rem;
   position: relative;
 }
-
 .container .fa-angle-left {
   color: #bebebe;
   font-size: 2rem;
 }
-
 .container .headerLogo {
   font-size: 2rem;
   font-family: "Shrikhand", cursive;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .container .headerLocation {
   position: absolute;
   right: 20px;
   top: 20px;
 }
-
 .container .headerLocation .inputHeader {
   border: none;
   font-weight: bold;
@@ -43,22 +35,16 @@ main {
   position: relative;
   height: 100vh;
 }
-
 main .cardMenuImg {
   z-index: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 350px;
 }
-
 main .cardMenu {
   margin-top: -3rem;
   background-color: #f8f8f8;
@@ -66,43 +52,101 @@ main .cardMenu {
   border-radius: 40px 40px 0 0;
   width: 100%;
   height: 620px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 main .cardMenu .cardMenuTitle {
   font-family: "Shrikhand", cursive;
   margin-left: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
 }
-
+main .cardMenu .checkHeart {
+  margin-left: 20px;
+  margin-bottom: 7px;
+  display: flex;
+  justify-content: flex-end;
+}
+main .cardMenu .checkHeart #heart1, main .cardMenu .checkHeart #heart2, main .cardMenu .checkHeart #heart3, main .cardMenu .checkHeart #heart4, main .cardMenu .checkHeart #heart5, main .cardMenu .checkHeart #heart6, main .cardMenu .checkHeart #heart7, main .cardMenu .checkHeart #heart8 {
+  position: absolute;
+  left: -100vw;
+}
+main .cardMenu .checkHeart #heart1Label, main .cardMenu .checkHeart #heart2Label, main .cardMenu .checkHeart #heart3Label, main .cardMenu .checkHeart #heart4Label {
+  position: absolute;
+  color: grey;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 2em;
+  z-index: 1;
+}
+main .cardMenu .checkHeart #heart5Label, main .cardMenu .checkHeart #heart6Label, main .cardMenu .checkHeart #heart7Label, main .cardMenu .checkHeart #heart8Label {
+  position: relative;
+  bottom: 2px;
+  left: 3px;
+  font-size: 2.2em;
+  color: transparent;
+  -ms-grid-row-align: center;
+      align-self: center;
+  cursor: pointer;
+  z-index: 2;
+}
+main .cardMenu .checkHeart #heart1Label:hover, main .cardMenu .checkHeart #heart2Label:hover, main .cardMenu .checkHeart #heart3Label:hover, main .cardMenu .checkHeart #heart4Label:hover {
+  color: grey;
+  cursor: pointer;
+}
+main .cardMenu .checkHeart #heart1Label::-moz-selection, main .cardMenu .checkHeart #heart2Label::-moz-selection, main .cardMenu .checkHeart #heart3Label::-moz-selection, main .cardMenu .checkHeart #heart4Label::-moz-selection, main .cardMenu .checkHeart #heart5Label::-moz-selection, main .cardMenu .checkHeart #heart6Label::-moz-selection, main .cardMenu .checkHeart #heart7Label::-moz-selection, main .cardMenu .checkHeart #heart8Label::-moz-selection {
+  color: transparent;
+  background: transparent;
+}
+main .cardMenu .checkHeart #heart1Label::selection, main .cardMenu .checkHeart #heart2Label::selection, main .cardMenu .checkHeart #heart3Label::selection, main .cardMenu .checkHeart #heart4Label::selection, main .cardMenu .checkHeart #heart5Label::selection, main .cardMenu .checkHeart #heart6Label::selection, main .cardMenu .checkHeart #heart7Label::selection, main .cardMenu .checkHeart #heart8Label::selection {
+  color: transparent;
+  background: transparent;
+}
+main .cardMenu .checkHeart #heart1:checked + label, main .cardMenu .checkHeart #heart2:checked + label, main .cardMenu .checkHeart #heart3:checked + label, main .cardMenu .checkHeart #heart4:checked + label {
+  color: transparent;
+  background: transparent;
+}
+main .cardMenu .checkHeart #heart5:checked + label, main .cardMenu .checkHeart #heart6:checked + label, main .cardMenu .checkHeart #heart7:checked + label, main .cardMenu .checkHeart #heart8:checked + label {
+  position: relative;
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  will-change: font-size;
+  -webkit-animation-name: heart;
+          animation-name: heart;
+  -webkit-animation-duration: 200ms;
+          animation-duration: 200ms;
+}
+@-webkit-keyframes heart {
+  0% {
+    transform: scaleX(0);
+    opacity: 0.2;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+@keyframes heart {
+  0% {
+    transform: scaleX(0);
+    opacity: 0.2;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
 main .cardMenu .cardMenuDish {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
-
 main .cardMenu .cardMenuDish .cardMenuDishColumn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnTitle {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -110,108 +154,75 @@ main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnTitle {
   color: #838383;
   margin-bottom: 0.5rem;
 }
-
 main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnTitle:hover {
   cursor: pointer;
   border-bottom: 3px solid #99e2d0;
 }
-
 main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice {
   background-color: white;
   width: 300px;
   height: 100px;
   border-radius: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-bottom: 1rem;
 }
-
 main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice .textContent {
   max-width: 220px;
   margin-left: 0.2rem;
 }
-
 main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice .textContent > h4 {
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-
 main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice .textContent > p {
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-
 main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice .price {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 50px;
 }
-
 main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice .testBox {
   display: none;
 }
-
 main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover {
   cursor: pointer;
 }
-
 main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover .textContent {
   width: 150px;
 }
-
 main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover .testBox {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  align-self: flex-end;
+  transform: scale(1);
   -webkit-animation-name: slideX;
           animation-name: slideX;
   -webkit-animation-duration: 300ms;
           animation-duration: 300ms;
-  -webkit-transform-origin: 100%;
-          transform-origin: 100%;
+  transform-origin: 100%;
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: #99e2d0;
   width: 80px;
   height: 100px;
   border-radius: 0 20px 20px 0;
 }
-
 main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover .testBox.testBox {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
   -webkit-animation-name: slideX;
           animation-name: slideX;
   -webkit-animation-duration: 300ms;
           animation-duration: 300ms;
-  -webkit-transform-origin: 100%;
-          transform-origin: 100%;
+  transform-origin: 100%;
 }
-
 main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover .testBox .fas {
   font-size: 2.5rem;
   background-color: white;
@@ -220,87 +231,66 @@ main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover
   border: 10px solid white;
   -webkit-animation: rotate 300ms linear;
 }
-
 @-webkit-keyframes slideX {
   0% {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
+    transform: scaleX(0);
   }
   100% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+    transform: scaleX(1);
   }
 }
-
 @keyframes slideX {
   0% {
-    -webkit-transform: scaleX(0);
-            transform: scaleX(0);
+    transform: scaleX(0);
   }
   100% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+    transform: scaleX(1);
   }
 }
-
 @-webkit-keyframes slideY {
   0% {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
+    transform: scaleY(0);
     opacity: 0;
   }
   50% {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
+    transform: scaleY(0);
     opacity: 0.2;
   }
   100% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
+    transform: scaleY(1);
     opacity: 1;
   }
 }
-
 @keyframes slideY {
   0% {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
+    transform: scaleY(0);
     opacity: 0;
   }
   50% {
-    -webkit-transform: scaleY(0);
-            transform: scaleY(0);
+    transform: scaleY(0);
     opacity: 0.2;
   }
   100% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
+    transform: scaleY(1);
     opacity: 1;
   }
 }
-
 @-webkit-keyframes rotate {
   100% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   0% {
-    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
-
 @keyframes rotate {
   100% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
   0% {
-    -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
-
 @-webkit-keyframes fadein {
   from {
     opacity: 0;
@@ -309,7 +299,6 @@ main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover
     opacity: 1;
   }
 }
-
 @keyframes fadein {
   from {
     opacity: 0;
@@ -318,10 +307,8 @@ main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover
     opacity: 1;
   }
 }
-
 main .cardMenu .btnOrder {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
+  -ms-grid-row-align: center;
       align-self: center;
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
@@ -331,44 +318,36 @@ main .cardMenu .btnOrder {
   border: 1px solid #f2f2f2;
   border-radius: 60px;
   background: #FF79DA;
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), color-stop(73%, #D675FF), to(#9356DC));
   background: linear-gradient(to bottom, #FF79DA 0%, #D675FF 73%, #9356DC 100%);
-  -webkit-box-shadow: 5px 5px 20px #d3d3d3;
-          box-shadow: 5px 5px 20px #d3d3d3;
+  box-shadow: 5px 5px 20px #d3d3d3;
   cursor: pointer;
 }
 
 .cardMenuDishColumn1 {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
   -webkit-animation-name: slideY;
           animation-name: slideY;
   -webkit-animation-duration: 400ms;
           animation-duration: 400ms;
-  -webkit-transform-origin: top;
-          transform-origin: top;
+  transform-origin: top;
 }
 
 .cardMenuDishColumn2 {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
   -webkit-animation-name: slideY;
           animation-name: slideY;
   -webkit-animation-duration: 900ms;
           animation-duration: 900ms;
-  -webkit-transform-origin: top;
-          transform-origin: top;
+  transform-origin: top;
 }
 
 .cardMenuDishColumn3 {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
   -webkit-animation-name: slideY;
           animation-name: slideY;
   -webkit-animation-duration: 1200ms;
           animation-duration: 1200ms;
-  -webkit-transform-origin: top;
-          transform-origin: top;
+  transform-origin: top;
 }
 
 .footerSection {
@@ -376,50 +355,26 @@ main .cardMenu .btnOrder {
   color: white;
   padding: 1rem 0 1rem 1rem;
 }
-
 .footerSection .footerTitle {
   font-family: "Shrikhand", cursive;
   font-size: 1.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  justify-content: center;
 }
-
 .footerSection .footerPartner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-around;
 }
-
 .footerSection .footerPartner .fas {
   margin-right: 0.5rem;
 }
-
 .footerSection .footerAbout {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-around;
 }
-
 .footerSection .footerAbout > a {
   color: white;
   text-decoration: none;

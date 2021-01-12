@@ -1,0 +1,65 @@
+@import "vars";
+@import "mixin"; 
+@media screen and (min-width: 776px) and (max-width: 1099px) {
+    .headerLocation {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+    .headerLocation {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+
+        .inputHeader {
+            border: none;
+            font-weight: bold;
+            background-color: transparent;
+        }
+    }
+
+    /*################ HOME ############### */
+    .intro {
+        text-align: center;
+        .introContent {
+            @include positionBase;
+        }
+        .introButton {
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            align-items: center;
+        }
+    }
+    .stepList {
+        display : flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .stepListItem {
+            width: 600px;
+            align-items: center;
+        }
+    }
+    .restaurantListItem {
+        width: calc(90%/2);
+
+        .restaurantListItemImg  {
+            @include sizeImg;
+            width: 170px;
+            height: 150px;
+        }
+    }
+    /*##################################### */
+
+
+    /*################ MENU ############### */
+
+    /*##################################### */
+
+
+    /*########## MENTIONS/CONTACT ######### */
+
+    /*##################################### */
+}

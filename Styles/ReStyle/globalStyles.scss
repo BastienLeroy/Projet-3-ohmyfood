@@ -2,8 +2,8 @@
 @import "mixin"; 
 
 body {
-    margin: auto;
-    max-width: 1280px;
+    display: flex;
+    justify-content: center;
     width: 100%;
 }
 
@@ -22,27 +22,19 @@ body {
         font-family: $fontShrikhand;
         @include positionBlock;
     }
-    .headerLocation {
-        position: absolute;
-        right: 20px;
-        top: 20px;
-
-        .inputHeader {
-            border: none;
-            font-weight: bold;
-            background-color: transparent;
-        }
+    .inputHeader {
+        border: none;
+        font-weight: bold;
+        background-color: transparent;
     }
 }
 
+/*################ HOME ############### */
 .intro {
     flex-wrap: wrap;
     @include positionBase;
 
     .introContent {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
         width: 100%;
         margin-bottom: 1rem;
     }
@@ -66,21 +58,20 @@ body {
         }
     }
 }
+
 .step {
     display: flex;
     flex-direction: column;
 
     .stepList {
         z-index: 1;
-        @include positionBase;
-        
+
         .stepListItem {
             position: relative;
             border: 1px $backgroundPrimary solid ;
             border-radius : 20px;
             box-shadow: 5px 5px 20px $boxShadowColor;
             height: 75px;
-            width: calc(1000px / 3);
             background-color:$backgroundPrimary;
             display: flex;
             justify-content: center;
@@ -94,7 +85,6 @@ body {
                     color : #9356dc;
                 }
             }
-            
             > p {
                 position: absolute; 
                 left :-10px;
@@ -105,31 +95,28 @@ body {
                 border-radius: 100%;
                 text-align: center;
             }
-
             > h4 {
                 font-size: 1.1rem;
                 margin: 0;
                 padding-left: 1rem;
             }
-
             > i {
                 color :grey ;
             }
         }
     }
 }
+
 .restaurant {
     background-color: $backgroundPrimary;
     margin : 1rem 0 1rem 0;
     border-radius: 1rem 1rem 1rem 1rem;
-    
+
     .restaurantTitle {
         padding : 1rem 0 0 1rem;
     }
-
     .restaurantList {
         display : flex;
-        flex-direction: row;
         justify-content: space-evenly;
         flex-wrap: wrap;
         padding-bottom: 1rem;
@@ -137,16 +124,10 @@ body {
         .restaurantListItem {
             box-shadow: 2px 2px 10px grey;
             border-radius: 1rem 1rem 1rem 1rem;
-            width: 500px;
             height: 150px;
             margin-top: 2rem;
             display : flex;
-            flex-direction: row;
             background-color: white;
-                               
-            .restaurantListItemImg  {
-                @include sizeImg;
-            }
 
             .restaurantListItemName {
                 width: 100%;
@@ -156,7 +137,6 @@ body {
                     text-decoration: none;
                     color: black;
                 }
-                
                 .checkHeart {
                     @include checkHeart1;
                     margin-right: 1rem;
@@ -167,7 +147,19 @@ body {
         }
     }
 }
-                    
+/*##################################### */
+
+
+/*################ MENU ############### */
+
+/*##################################### */
+
+
+/*########## MENTIONS/CONTACT ######### */
+
+/*##################################### */
+
+
 .footerSection {
     @include footerSection;
 }

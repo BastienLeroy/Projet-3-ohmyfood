@@ -1,0 +1,70 @@
+@media screen and (max-width: 775px) {
+  /*################ HOME ############### */
+  header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .headerLocation {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    -ms-grid-row-align: center;
+        align-self: center;
+  }
+
+  .intro {
+    text-align: center;
+  }
+  .intro .introContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .intro .introButton {
+    display: flex;
+    justify-content: center;
+    -ms-grid-row-align: center;
+        align-self: center;
+    align-items: center;
+  }
+
+  .stepList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .stepList .stepListItem {
+    width: 90%;
+  }
+
+  .restaurantList {
+    flex-direction: column;
+  }
+  .restaurantList .restaurantListItem {
+    width: 90%;
+    flex-direction: column;
+  }
+  .restaurantList .restaurantListItem .restaurantListItemImg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1rem 0 0 1rem;
+    width: auto;
+    height: 90px;
+  }
+  .restaurantList .restaurantListItem .restaurantListItemName {
+    justify-content: center;
+  }
+
+  /*##################################### */
+  /*################ MENU ############### */
+  /*##################################### */
+  /*########## MENTIONS/CONTACT ######### */
+  /*##################################### */
+}
+/*# sourceMappingURL=small.css.map */

@@ -1,0 +1,68 @@
+@import "vars";
+@import "mixin"; 
+@media screen and (max-width: 775px) {
+     /*################ HOME ############### */
+     header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .headerLocation {
+        position: relative;;
+        display: flex;
+        justify-content: center;
+        align-self: center;
+    }
+    .intro {
+        text-align: center;
+        .introContent {
+            @include positionBase;
+        }
+        .introButton {
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            align-items: center;
+        }
+    }
+    .stepList {
+        display : flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .stepListItem {
+            width: 90%;
+        }
+    }
+    .restaurantList {
+        flex-direction: column;
+
+        .restaurantListItem {
+            width: 90%;                     
+            flex-direction: column;
+
+            .restaurantListItemImg  {
+                @include sizeImg;
+                width: auto;
+                height: 90px;
+            }
+            .restaurantListItemName {
+                justify-content: center;
+            }
+        }
+    }
+    /*##################################### */
+
+
+    /*################ MENU ############### */
+
+    /*##################################### */
+
+
+    /*########## MENTIONS/CONTACT ######### */
+
+    /*##################################### */
+
+}
