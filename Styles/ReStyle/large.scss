@@ -16,7 +16,8 @@
     .introContent {
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
+        align-items: center;
     }
     
     .stepList {
@@ -35,6 +36,7 @@
     
             .restaurantListItemImg  {
                 @include sizeImg;
+                border-radius: 1rem 0 0 1rem ;
                 width: 250px;
                 height: 150px;
             }

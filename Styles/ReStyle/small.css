@@ -1,8 +1,14 @@
 @media screen and (max-width: 775px) {
-  /*################ HOME ############### */
+  body {
+    margin: 0;
+  }
+
+  .container {
+    margin: 0;
+  }
+
   header {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -13,15 +19,19 @@
     justify-content: center;
     -ms-grid-row-align: center;
         align-self: center;
+    background-color: #d3d3d3;
+    width: 100%;
+    height: 30px;
+  }
+  .headerLocation .fas {
+    -ms-grid-row-align: center;
+        align-self: center;
+    margin-left: 55px;
   }
 
+  /*################ HOME ############### */
   .intro {
     text-align: center;
-  }
-  .intro .introContent {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
   }
   .intro .introButton {
     display: flex;
@@ -40,25 +50,40 @@
   }
   .stepList .stepListItem {
     width: 90%;
+    margin-bottom: 1rem;
   }
 
   .restaurantList {
     flex-direction: column;
+    align-items: center;
   }
   .restaurantList .restaurantListItem {
     width: 90%;
+    height: 200px !important;
+    margin: 0 0 1rem 0 !important;
+    display: block !important;
     flex-direction: column;
+    justify-content: center;
   }
   .restaurantList .restaurantListItem .restaurantListItemImg {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 1rem 0 0 1rem;
-    width: auto;
-    height: 90px;
+    border-radius: 1rem 1rem 0 0;
+    width: 100%;
+    height: 140px;
   }
   .restaurantList .restaurantListItem .restaurantListItemName {
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+  }
+  .restaurantList .restaurantListItem .restaurantListItemName > a {
+    width: 80%;
+  }
+  .restaurantList .restaurantListItem .restaurantListItemName > a > h4, .restaurantList .restaurantListItem .restaurantListItemName > a p {
+    margin: 0;
   }
 
   /*##################################### */
@@ -66,5 +91,42 @@
   /*##################################### */
   /*########## MENTIONS/CONTACT ######### */
   /*##################################### */
+  .footerSection {
+    background-color: #3d3d3d;
+    color: white;
+    padding: 0 0 1rem 1rem;
+  }
+  .footerSection .footerTitle {
+    font-family: "Shrikhand", cursive;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: -0.5rem;
+  }
+  .footerSection .footerPartner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .footerSection .footerPartner .fas {
+    margin-right: 0.5rem;
+  }
+  .footerSection .footerPartner p {
+    margin: 0.5rem 0 0 0;
+  }
+  .footerSection .footerAbout {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .footerSection .footerAbout > a {
+    color: white;
+    text-decoration: none;
+  }
+  .footerSection .footerAbout p {
+    margin: 0.5rem 0 0 0;
+  }
 }
 /*# sourceMappingURL=small.css.map */

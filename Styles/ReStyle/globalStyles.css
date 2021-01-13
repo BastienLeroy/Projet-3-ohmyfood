@@ -1,12 +1,10 @@
 body {
   display: flex;
   justify-content: center;
-  width: 100%;
 }
 
 .container {
   font-family: "Roboto", sans-serif;
-  height: 100vh;
   margin: 0 1rem 0 1rem;
   position: relative;
 }
@@ -30,12 +28,14 @@ body {
 .intro {
   flex-wrap: wrap;
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
 }
 .intro .introContent {
   width: 100%;
   margin-bottom: 1rem;
+}
+.intro .introContent > h4 {
+  font-weight: normal;
 }
 .intro .introButton {
   font-family: "Roboto", sans-serif;
@@ -65,7 +65,7 @@ body {
   position: relative;
   border: 1px #f2f2f2 solid;
   border-radius: 20px;
-  box-shadow: 5px 5px 20px #d3d3d3;
+  box-shadow: 5px 5px 10px #d3d3d3;
   height: 75px;
   background-color: #f2f2f2;
   display: flex;
@@ -121,7 +121,7 @@ body {
   background-color: white;
 }
 .restaurant .restaurantList .restaurantListItem .restaurantListItemName {
-  width: 100%;
+  width: 90%;
   margin-left: 1rem;
 }
 .restaurant .restaurantList .restaurantListItem .restaurantListItemName > a {

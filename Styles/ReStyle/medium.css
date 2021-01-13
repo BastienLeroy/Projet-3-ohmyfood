@@ -1,29 +1,16 @@
-@media screen and (min-width: 776px) and (max-width: 1099px) {
+@media screen and (min-width: 768px) and (max-width: 1099px) {
   .headerLocation {
     position: absolute;
     right: 20px;
     top: 20px;
-  }
-
-  .headerLocation {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-  }
-  .headerLocation .inputHeader {
-    border: none;
-    font-weight: bold;
-    background-color: transparent;
   }
 
   /*################ HOME ############### */
   .intro {
     text-align: center;
   }
-  .intro .introContent {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  .intro .introContent > h4 {
+    font-weight: normal;
   }
   .intro .introButton {
     display: flex;
@@ -43,6 +30,7 @@
   .stepList .stepListItem {
     width: 600px;
     align-items: center;
+    margin-bottom: 1rem;
   }
 
   .restaurantListItem {

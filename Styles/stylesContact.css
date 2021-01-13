@@ -1,26 +1,33 @@
 body {
   margin: auto;
-  max-width: 1280px;
   width: 100%;
 }
-
+.imgBg {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  max-height: 100%;
+  opacity: 0.5;
+}
 .container {
-  background-image: url(../Assets/images/restaurants/bigpicture/toa-heftiba-DQKerTsQwi0-unsplash.webp);
+  position: relative;
   width: 1280px;
   height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  margin: 0 auto;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .container .fa-angle-left {
   position: relative;
   left: 20px;
   top: 20px;
-  color: white;
+  color: rgb(56, 56, 56);
   font-size: 2rem;
 }
 .container .headerLogo {
-  color: white;
+  color: rgb(56, 56, 56);
 }
 .container .headerLogo {
   font-size: 2rem;
@@ -32,7 +39,7 @@ body {
   display: flex;
   justify-content: flex-end;
   margin-top: -3rem;
-  color: white;
+  color: rgb(56, 56, 56);
 }
 .container .headerLocation .inputHeader {
   border: none;
