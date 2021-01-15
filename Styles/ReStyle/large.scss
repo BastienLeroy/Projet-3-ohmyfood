@@ -4,12 +4,21 @@
 @media screen and (min-width: 1100px) {
     .container {
         max-width: 1280px;
+        width: 100%;
     }
 
-    .headerLocation {
-        position: absolute;
-        right: 20px;
-        top: 20px;
+    header {
+        display: flex;
+        justify-content: center;
+
+        > div {
+            width: calc(100% / 3);
+        }
+        & .headerLocation {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
     }
     
     /*################ HOME ############### */
@@ -49,7 +58,16 @@
 
 
     /*################ MENU ############### */
+    .cardMenu {
+        height: 640px;
 
+        .cardMenuDish {
+            margin-left: 1.5rem;
+        }
+        .cardMenuDishColumnChoice {
+            width :90% !important;
+        }
+    }
     /*##################################### */
 
 

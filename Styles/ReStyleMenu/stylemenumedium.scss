@@ -2,10 +2,14 @@
 @import "mixin"; 
 
 @media screen and (min-width: 768px) and (max-width: 1099px) {
-    .cardMenuDish {
-        margin-left: 1.5rem;
-    }
-    .cardMenuDishColumnChoice {
-        width :90% !important;
+    .cardMenu {
+        height: 640px;
+
+        .cardMenuDish {
+            margin-left: 1.5rem;
+        }
+        .cardMenuDishColumnChoice {
+            width :90% !important;
+        }
     }
 }

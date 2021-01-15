@@ -2,10 +2,18 @@
 @import "mixin"; 
 @media screen and (min-width: 768px) and (max-width: 1099px) {
 
-    .headerLocation {
-        position: absolute;
-        right: 20px;
-        top: 20px;
+    header {
+        display: flex;
+        justify-content: center;
+
+        > div {
+            width: calc(100% / 3);
+        }
+        & .headerLocation {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
     }
 
     /*################ HOME ############### */
@@ -57,8 +65,15 @@
 
 
     /*################ MENU ############### */
-    .cardMenuDishColumnChoice {
-        width: 85% !important;
+    .cardMenu {
+        height: 640px;
+
+        .cardMenuDish {
+            margin-left: 1.5rem;
+        }
+        .cardMenuDishColumnChoice {
+            width :90% !important;
+        }
     }
     /*##################################### */
 

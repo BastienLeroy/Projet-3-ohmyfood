@@ -1,8 +1,15 @@
 @media screen and (min-width: 768px) and (max-width: 1099px) {
-  .headerLocation {
-    position: absolute;
-    right: 20px;
-    top: 20px;
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  header > div {
+    width: calc(100% /3);
+  }
+  header .headerLocation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
   }
 
   /*################ HOME ############### */
@@ -50,8 +57,14 @@
 
   /*##################################### */
   /*################ MENU ############### */
-  .cardMenuDishColumnChoice {
-    width: 85% !important;
+  .cardMenu {
+    height: 640px;
+  }
+  .cardMenu .cardMenuDish {
+    margin-left: 1.5rem;
+  }
+  .cardMenu .cardMenuDishColumnChoice {
+    width: 90% !important;
   }
 
   /*##################################### */

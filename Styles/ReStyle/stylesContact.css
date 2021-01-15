@@ -2,6 +2,7 @@ body {
   margin: auto;
   width: 100%;
 }
+
 .imgBg {
   position: absolute;
   z-index: 1;
@@ -9,6 +10,7 @@ body {
   max-height: 100%;
   opacity: 0.5;
 }
+
 .container {
   position: relative;
   width: 1280px;
@@ -23,11 +25,11 @@ body {
   position: relative;
   left: 20px;
   top: 20px;
-  color: rgb(56, 56, 56);
+  color: white;
   font-size: 2rem;
 }
 .container .headerLogo {
-  color: rgb(56, 56, 56);
+  color: white;
 }
 .container .headerLogo {
   font-size: 2rem;
@@ -39,7 +41,7 @@ body {
   display: flex;
   justify-content: flex-end;
   margin-top: -3rem;
-  color: rgb(56, 56, 56);
+  color: white;
 }
 .container .headerLocation .inputHeader {
   border: none;

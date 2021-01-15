@@ -4,22 +4,9 @@ body {
   width: 100%;
 }
 
-header {
-  display: flex;
-  justify-content: center;
-  justify-content: center;
-}
-
-header > a {
-  position: absolute;
-  left: 20px;
-}
-
 .container {
   font-family: "Roboto", sans-serif;
   margin: 0 1rem 0 1rem;
-  position: relative;
-  height: 100%;
 }
 .container .fa-angle-left {
   color: #bebebe;
@@ -38,9 +25,19 @@ header > a {
   background-color: transparent;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+}
+
+header > a {
+  position: absolute;
+  left: 20px;
+}
+
 main {
   position: relative;
-  height: 100vh;
 }
 main .cardMenuImg {
   z-index: 1;
@@ -55,10 +52,8 @@ main .cardMenuImg {
 main .cardMenu {
   margin-top: -3rem;
   background-color: #f8f8f8;
-  position: absolute;
   border-radius: 40px 40px 0 0;
   width: 100%;
-  height: 640px;
   display: flex;
   flex-direction: column;
 }
@@ -156,6 +151,30 @@ main .cardMenu .cardMenuDish .cardMenuDishColumn {
   display: flex;
   flex-direction: column;
 }
+main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumn1 {
+  transform: scale(1);
+  -webkit-animation-name: slideY;
+          animation-name: slideY;
+  -webkit-animation-duration: 400ms;
+          animation-duration: 400ms;
+  transform-origin: top;
+}
+main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumn2 {
+  transform: scale(1);
+  -webkit-animation-name: slideY;
+          animation-name: slideY;
+  -webkit-animation-duration: 900ms;
+          animation-duration: 900ms;
+  transform-origin: top;
+}
+main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumn3 {
+  transform: scale(1);
+  -webkit-animation-name: slideY;
+          animation-name: slideY;
+  -webkit-animation-duration: 1200ms;
+          animation-duration: 1200ms;
+  transform-origin: top;
+}
 main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnTitle {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -208,6 +227,13 @@ main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover
   width: 150px;
 }
 main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover .testBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99e2d0;
+  width: 80px;
+  height: 100px;
+  border-radius: 0 20px 20px 0;
   align-self: flex-end;
   transform: scale(1);
   -webkit-animation-name: slideX;
@@ -216,21 +242,6 @@ main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover
           animation-duration: 300ms;
   transform-origin: 100%;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #99e2d0;
-  width: 80px;
-  height: 100px;
-  border-radius: 0 20px 20px 0;
-}
-main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover .testBox.testBox {
-  transform: scale(1);
-  -webkit-animation-name: slideX;
-          animation-name: slideX;
-  -webkit-animation-duration: 300ms;
-          animation-duration: 300ms;
-  transform-origin: 100%;
 }
 main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover .testBox .fas {
   font-size: 1.5rem;
@@ -316,7 +327,7 @@ main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover
     opacity: 1;
   }
 }
-main .cardMenu .btnOrder {
+main .btnOrder {
   -ms-grid-row-align: center;
       align-self: center;
   font-family: "Roboto", sans-serif;
@@ -330,33 +341,6 @@ main .cardMenu .btnOrder {
   background: linear-gradient(to bottom, #FF79DA 0%, #D675FF 73%, #9356DC 100%);
   box-shadow: 5px 5px 20px #d3d3d3;
   cursor: pointer;
-}
-
-.cardMenuDishColumn1 {
-  transform: scale(1);
-  -webkit-animation-name: slideY;
-          animation-name: slideY;
-  -webkit-animation-duration: 400ms;
-          animation-duration: 400ms;
-  transform-origin: top;
-}
-
-.cardMenuDishColumn2 {
-  transform: scale(1);
-  -webkit-animation-name: slideY;
-          animation-name: slideY;
-  -webkit-animation-duration: 900ms;
-          animation-duration: 900ms;
-  transform-origin: top;
-}
-
-.cardMenuDishColumn3 {
-  transform: scale(1);
-  -webkit-animation-name: slideY;
-          animation-name: slideY;
-  -webkit-animation-duration: 1200ms;
-          animation-duration: 1200ms;
-  transform-origin: top;
 }
 
 .footerSection {

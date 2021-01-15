@@ -4,7 +4,7 @@
   }
 
   .container {
-    margin: 0;
+    margin: 0.5rem;
   }
 
   header {
@@ -41,6 +41,9 @@
   .intro .introContent > h4 {
     margin: 0 1.2rem 1rem 1.2rem;
   }
+  .intro .presentation {
+    display: none;
+  }
   .intro .introButton {
     display: flex;
     justify-content: center;
@@ -49,10 +52,6 @@
     align-items: center;
     margin-bottom: 3rem;
     width: auto;
-  }
-
-  .presentation {
-    display: none;
   }
 
   .stepTitle {
@@ -114,21 +113,21 @@
 
   /*##################################### */
   /*################ MENU ############### */
-  .container .headerLocation {
-    position: initial;
-  }
-
-  .cardMenu {
-    height: 100% !important;
+  .cardMenuImg {
+    height: 200px !important;
   }
 
   .cardMenuDish {
-    width: 100%;
     flex-direction: column !important;
-    margin-left: 0.5rem;
+    margin-left: 1.5rem;
   }
-  .cardMenuDish .cardMenuDishColumnChoice {
-    width: 85% !important;
+
+  .cardMenuDishColumnChoice {
+    width: 90% !important;
+  }
+
+  .btnOrder {
+    margin-bottom: 2rem;
   }
 
   /*##################################### */

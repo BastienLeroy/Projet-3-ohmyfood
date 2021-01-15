@@ -7,20 +7,17 @@
     height: 200px !important;
   }
 
-  .cardMenu {
-    height: auto !important;
-  }
-
   .cardMenuDish {
     flex-direction: column !important;
-  }
-
-  .cardMenuDish {
     margin-left: 1.5rem;
   }
 
   .cardMenuDishColumnChoice {
     width: 90% !important;
+  }
+
+  .btnOrder {
+    margin-bottom: 2rem;
   }
 }
 /*# sourceMappingURL=stylemenusmall.css.map */
