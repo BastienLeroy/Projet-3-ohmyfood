@@ -36,6 +36,9 @@
   .restaurantListItem {
     width: calc(90%/2);
   }
+  .restaurantListItem > p {
+    left: 10px !important;
+  }
   .restaurantListItem .restaurantListItemImg {
     background-position: center;
     background-repeat: no-repeat;
@@ -47,6 +50,10 @@
 
   /*##################################### */
   /*################ MENU ############### */
+  .cardMenuDishColumnChoice {
+    width: 85% !important;
+  }
+
   /*##################################### */
   /*########## MENTIONS/CONTACT ######### */
   /*##################################### */

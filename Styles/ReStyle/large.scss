@@ -33,6 +33,9 @@
     
         .restaurantListItem {
             width: 500px;
+            > p {
+                left: 10px !important;
+            }
     
             .restaurantListItemImg  {
                 @include sizeImg;

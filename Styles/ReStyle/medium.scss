@@ -41,6 +41,10 @@
     .restaurantListItem {
         width: calc(90%/2);
 
+        > p {
+            left: 10px !important;
+        }
+
 
         .restaurantListItemImg  {
             @include sizeImg;
@@ -53,7 +57,9 @@
 
 
     /*################ MENU ############### */
-
+    .cardMenuDishColumnChoice {
+        width: 85% !important;
+    }
     /*##################################### */
 
 

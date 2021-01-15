@@ -1,0 +1,118 @@
+body {
+  margin: auto;
+  width: 100%;
+}
+
+.imgBg {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  max-height: 100%;
+  opacity: 0.5;
+}
+
+.container {
+  position: relative;
+  width: 1280px;
+  height: 100vh;
+  margin: 0 auto;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container .fa-angle-left {
+  position: relative;
+  left: 20px;
+  top: 20px;
+  color: white;
+  font-size: 2rem;
+}
+.container .headerLogo {
+  color: white;
+}
+.container .headerLogo {
+  font-size: 2rem;
+  font-family: "Shrikhand", cursive;
+  display: flex;
+  justify-content: center;
+}
+.container .headerLocation {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -3rem;
+  color: white;
+}
+.container .headerLocation .inputHeader {
+  border: none;
+  font-weight: bold;
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container .formContact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  background-image: #f4ebff;
+}
+.container .formContact .formContactName {
+  margin-top: 2rem;
+}
+.container .formContact .formContactMail {
+  margin-top: 2rem;
+}
+.container .formContact .formContactMsg {
+  display: flex;
+  justify-content: center;
+  height: 30%;
+  width: 100%;
+  margin-top: 2rem;
+}
+.container .formContact .btnSubmit {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  width: 100px;
+  height: 30px;
+  color: white;
+  border: 1px solid #f2f2f2;
+  border-radius: 60px;
+  background: #FF79DA;
+  background: linear-gradient(to bottom, #FF79DA 0%, #D675FF 73%, #9356DC 100%);
+  box-shadow: 5px 5px 20px #d3d3d3;
+  margin-top: 1rem;
+}
+
+.footerSection {
+  font-family: "Roboto", sans-serif;
+  background-color: #3d3d3d;
+  color: white;
+  padding: 1rem 0 1rem 1rem;
+}
+.footerSection .footerTitle {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.footerSection .footerPartner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.footerSection .footerPartner .fas {
+  margin-right: 0.5rem;
+}
+.footerSection .footerAbout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.footerSection .footerAbout > a {
+  color: white;
+  text-decoration: none;
+}
+/*# sourceMappingURL=stylesContact.css.map */

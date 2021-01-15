@@ -31,6 +31,9 @@
   .restaurantList .restaurantListItem {
     width: 500px;
   }
+  .restaurantList .restaurantListItem > p {
+    left: 10px !important;
+  }
   .restaurantList .restaurantListItem .restaurantListItemImg {
     background-position: center;
     background-repeat: no-repeat;

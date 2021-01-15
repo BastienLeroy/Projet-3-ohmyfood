@@ -124,13 +124,25 @@ body {
         padding-bottom: 1rem;
 
         .restaurantListItem {
+            position: relative;
             box-shadow: 2px 2px 10px grey;
             border-radius: 1rem 1rem 1rem 1rem;
             height: 150px;
             margin-top: 2rem;
             display : flex;
             background-color: white;
+            & > p {
+                background-color: $colorSecondary;
+                color: rgb(0, 128, 6);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 80px;
+                height: 30px;
+                position: absolute;
+                top: 10px;
 
+            }
             .restaurantListItemName {
                 width: 90%;
                 margin-left: 1rem;
@@ -149,11 +161,6 @@ body {
         }
     }
 }
-/*##################################### */
-
-
-/*################ MENU ############### */
-
 /*##################################### */
 
 

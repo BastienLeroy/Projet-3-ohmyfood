@@ -1,0 +1,26 @@
+@media screen and (max-width: 775px) {
+  .container {
+    margin: 0.5rem !important;
+  }
+
+  .cardMenuImg {
+    height: 200px !important;
+  }
+
+  .cardMenu {
+    height: auto !important;
+  }
+
+  .cardMenuDish {
+    flex-direction: column !important;
+  }
+
+  .cardMenuDish {
+    margin-left: 1.5rem;
+  }
+
+  .cardMenuDishColumnChoice {
+    width: 90% !important;
+  }
+}
+/*# sourceMappingURL=stylemenusmall.css.map */
