@@ -510,6 +510,33 @@ main .btnOrder {
   cursor: pointer;
 }
 
+.cardMenuDishColumn1 {
+  transform: scale(1);
+  -webkit-animation-name: slideY;
+          animation-name: slideY;
+  -webkit-animation-duration: 400ms;
+          animation-duration: 400ms;
+  transform-origin: top;
+}
+
+.cardMenuDishColumn2 {
+  transform: scale(1);
+  -webkit-animation-name: slideY;
+          animation-name: slideY;
+  -webkit-animation-duration: 900ms;
+          animation-duration: 900ms;
+  transform-origin: top;
+}
+
+.cardMenuDishColumn3 {
+  transform: scale(1);
+  -webkit-animation-name: slideY;
+          animation-name: slideY;
+  -webkit-animation-duration: 1200ms;
+          animation-duration: 1200ms;
+  transform-origin: top;
+}
+
 /*##################################### */
 /*########## MENTIONS/CONTACT ######### */
 /*##################################### */
@@ -542,4 +569,124 @@ main .btnOrder {
   color: white;
   text-decoration: none;
 }
+
+/*##############SPINNER#################*/
+.cssload-loader {
+  font-family: "Shrikhand", cursive;
+  width: 244px;
+  height: 49px;
+  line-height: 49px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 52%;
+  transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #9356dc;
+  letter-spacing: 0.2em;
+}
+
+.cssload-loader::before, .cssload-loader::after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: #ff79da;
+  position: absolute;
+  animation: cssload-load 0.81s infinite alternate ease-in-out;
+  -o-animation: cssload-load 0.81s infinite alternate ease-in-out;
+  -ms-animation: cssload-load 0.81s infinite alternate ease-in-out;
+  -webkit-animation: cssload-load 0.81s infinite alternate ease-in-out;
+  -moz-animation: cssload-load 0.81s infinite alternate ease-in-out;
+}
+
+.cssload-loader::before {
+  top: 0;
+}
+
+.cssload-loader::after {
+  bottom: 0;
+}
+
+@keyframes cssload-load {
+  0% {
+    left: 0;
+    height: 20px;
+    width: 15px;
+  }
+  50% {
+    height: 8px;
+    width: 39px;
+  }
+  100% {
+    left: 229px;
+    height: 29px;
+    width: 15px;
+  }
+}
+@-webkit-keyframes cssload-load {
+  0% {
+    left: 0;
+    height: 29px;
+    width: 15px;
+  }
+  50% {
+    height: 8px;
+    width: 39px;
+  }
+  100% {
+    left: 229px;
+    height: 29px;
+    width: 15px;
+  }
+}
+.cssload-loader {
+  -webkit-animation: noloader 0ms 1650ms both;
+          animation: noloader 0ms 1650ms both;
+}
+
+.containerindex {
+  -webkit-animation: screen 0ms 1650ms both;
+          animation: screen 0ms 1650ms both;
+}
+
+@-webkit-keyframes noloader {
+  0% {
+    transform: translateX(1);
+  }
+  100% {
+    transform: translateX(-99999px);
+  }
+}
+
+@keyframes noloader {
+  0% {
+    transform: translateX(1);
+  }
+  100% {
+    transform: translateX(-99999px);
+  }
+}
+@-webkit-keyframes screen {
+  0% {
+    transform: translateX(-9999px);
+  }
+  100% {
+    transform: translateX(1);
+  }
+}
+@keyframes screen {
+  0% {
+    transform: translateX(-9999px);
+  }
+  100% {
+    transform: translateX(1);
+  }
+}
+/*##################################### */
 /*# sourceMappingURL=globalStyles.css.map */
