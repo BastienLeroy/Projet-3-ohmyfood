@@ -5,15 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Styles/ReStyle/globalStyles.css">
+    <link rel="stylesheet" href="../Styles/ReStyle/large.css">
+    <link rel="stylesheet" href="../Styles/ReStyle/medium.css">
+    <link rel="stylesheet" href="../Styles/ReStyle/small.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e7227013d8.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <img src="../assets/images/restaurants/bigpicture/jay-wennington-N_Y88TWmGwA-unsplash.webp" class="imgBg" />
-    <div class="container">
+    <img src="../assets/images/restaurants/bigpicture/jay-wennington-N_Y88TWmGwA-unsplash.webp" class="imgBg" alt="background"/>
+    <div class="container containerContact">
         <header>
-            <a href="../index.html"><i class="fas fa-angle-left"></i></a>
+            <div>
+                <a href="../index.html"><i class="fas fa-angle-left"></i></a>
+            </div>
             <div class="headerLogo">ohmyfood</div>
             <div class="headerLocation">
                 <i class="fas fa-map-marker-alt"></i>
@@ -31,9 +36,17 @@
                     <label for="mail"></label>
                     <input placeholder="Votre mail" type="email" id="mail" name="user_mail">
                 </div>
-                <div class="formContactMsg">
+                <div class="formContactMsgLarge">
                     <label for="msg"></label>
-                    <textarea placeholder="Votre message..." rows="9" cols="161" id="msg" name="user_message"></textarea>
+                    <textarea placeholder="Votre message..." rows="9" cols="140" id="msg" name="user_message"></textarea>
+                </div>
+                <div class="formContactMsgMedium">
+                    <label for="msg"></label>
+                    <textarea placeholder="Votre message..." rows="9" cols="100" id="msg1" name="user_message"></textarea>
+                </div>
+                <div class="formContactMsgSmall">
+                    <label for="msg"></label>
+                    <textarea placeholder="Votre message..." rows="20" cols="50" id="msg2" name="user_message"></textarea>
                 </div>
                 <div>
                     <input class="btnSubmit" type="submit" value="Envoyer !"/>
@@ -56,8 +69,8 @@
                 </div>
     
                 <div class="footerAbout">
-                    <a href="mentions.html" alt="mentions légales"><p>Mentions Légales</p></a>
-                    <a href="formContact.html" alt="contact"><p>contact</p></a>
+                    <a href="mentions.html"><p>Mentions Légales</p></a>
+                    <a href="formContact.html"><p>contact</p></a>
                 </div>
             </div>
         </footer>

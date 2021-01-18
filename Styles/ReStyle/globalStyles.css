@@ -5,10 +5,10 @@ body {
 
 .container {
   font-family: "Roboto", sans-serif;
-  margin: 0 1rem 0 1rem;
+  margin: 0 1rem 0 1rem !important;
 }
 .container .fa-angle-left {
-  color: #bebebe;
+  color: #303030;
   font-size: 2rem;
 }
 .container .headerLogo {
@@ -97,8 +97,8 @@ main .step .stepList .stepListItem > i {
 }
 main .restaurant {
   background-color: #f2f2f2;
-  margin: 1rem 0 1rem 0;
-  border-radius: 1rem 1rem 1rem 1rem;
+  margin: 1rem 0 0 0;
+  border-radius: 1rem 1rem 0 0;
 }
 main .restaurant .restaurantTitle {
   padding: 1rem 0 0 1rem;
@@ -107,7 +107,7 @@ main .restaurant .restaurantList {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  padding-bottom: 1rem;
+  padding-bottom: 3rem;
 }
 main .restaurant .restaurantList .restaurantListItem {
   position: relative;
@@ -539,11 +539,58 @@ main .btnOrder {
 
 /*##################################### */
 /*########## MENTIONS/CONTACT ######### */
+.containerContact {
+  position: relative;
+  width: 1280px;
+  height: 100vh;
+  margin: 0 auto;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.formContact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  background-image: #f4ebff;
+}
+.formContact .formContactName {
+  margin-top: 2rem;
+}
+.formContact .formContactMail {
+  margin-top: 2rem;
+}
+.formContact textarea {
+  margin-top: 3rem;
+}
+.formContact .btnSubmit {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  width: 100px;
+  height: 30px;
+  color: white;
+  border: 1px solid #f2f2f2;
+  border-radius: 60px;
+  background: #FF79DA;
+  background: linear-gradient(to bottom, #FF79DA 0%, #D675FF 73%, #9356DC 100%);
+  box-shadow: 5px 5px 20px #d3d3d3;
+  margin-top: 1rem;
+}
+
+.mentions {
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+}
+
 /*##################################### */
 .footerSection {
   background-color: #3d3d3d;
   color: white;
-  padding: 1rem 0 1rem 1rem;
+  padding: 1rem 0 0 1rem;
 }
 .footerSection .footerTitle {
   font-family: "Shrikhand", cursive;
@@ -688,5 +735,4 @@ main .btnOrder {
     transform: translateX(1);
   }
 }
-/*##################################### */
-/*# sourceMappingURL=globalStyles.css.map */
+/*##################################### *//*# sourceMappingURL=globalStyles.css.map */

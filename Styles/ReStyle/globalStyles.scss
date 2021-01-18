@@ -8,10 +8,10 @@ body {
 
 .container {
     font-family: $fontRoboto;
-    margin: 0 1rem 0 1rem;
+    margin: 0 1rem 0 1rem !important;
 
     .fa-angle-left {
-        color: rgb(190, 190, 190);
+        color: rgb(48, 48, 48);
         font-size: 2rem;
     }
     .headerLogo {
@@ -111,8 +111,8 @@ main {
     
     .restaurant {
         background-color: $backgroundPrimary;
-        margin : 1rem 0 1rem 0;
-        border-radius: 1rem 1rem 1rem 1rem;
+        margin : 1rem 0 0 0;
+        border-radius: 1rem 1rem 0 0;
     
         .restaurantTitle {
             padding : 1rem 0 0 1rem;
@@ -121,7 +121,7 @@ main {
             display : flex;
             justify-content: space-evenly;
             flex-wrap: wrap;
-            padding-bottom: 1rem;
+            padding-bottom: 3rem;
     
             .restaurantListItem {
                 position: relative;
@@ -394,7 +394,57 @@ main {
 /*##################################### */
 
 /*########## MENTIONS/CONTACT ######### */
+.containerContact {
+    position: relative;
+    width: 1280px;
+    height: 100vh;
+    margin: 0 auto;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+.formContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    background-image: #f4ebff;
+
+       
+        .formContactName {
+            margin-top : 2rem;
+        }
+        .formContactMail {
+            margin-top : 2rem;
+        }
+        textarea {
+            margin-top: 3rem;
+                    }
+        .btnSubmit {
+            font-family: $fontRoboto;
+            font-size: 1.2rem;
+            width: 100px;
+            height: 30px;
+            color: white;
+            border : 1px solid $backgroundPrimary;
+            border-radius: 60px ;
+            background: #FF79DA;
+            background: -moz-linear-gradient(top, #FF79DA 0%, #D675FF 73%, #9356DC 100%);
+            background: -webkit-linear-gradient(top, #FF79DA 0%, #D675FF 73%, #9356DC 100%);
+            background: linear-gradient(to bottom, #FF79DA 0%, #D675FF 73%, #9356DC 100%);
+            box-shadow: 5px 5px 20px $boxShadowColor;
+            margin-top: 1rem;
+        }
+}
+
+
+.mentions {
+    font-family: $fontRoboto;
+    text-align: justify;
+}
 /*##################################### */
 
 
@@ -498,12 +548,14 @@ main {
 $prog-bar-dur: 1500ms;
 $prog-bar-delay: 150ms;
 $screen-delay: $prog-bar-dur + $prog-bar-delay;
+
 .cssload-loader {
     animation: noloader 0ms $screen-delay both;
 }
 .containerindex {
     animation: screen 0ms $screen-delay both; 
 }
+
 @keyframes noloader{
     0% {
         transform: translateX(1);

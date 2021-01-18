@@ -27,7 +27,7 @@
     -ms-grid-row-align: center;
         align-self: center;
     background-color: #d3d3d3;
-    width: 100%;
+    width: 100vw;
     height: 50px;
   }
   header .headerLocation .fas {
@@ -79,6 +79,7 @@
 
   .restaurant {
     border-radius: 0%;
+    padding-bottom: 3rem;
   }
 
   .restaurantList {
@@ -139,11 +140,35 @@
 
   /*##################################### */
   /*########## MENTIONS/CONTACT ######### */
+  .imgBg {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-height: 100%;
+    opacity: 0.5;
+  }
+
+  .formContactMsgLarge {
+    display: none;
+  }
+
+  .formContactMsgMedium {
+    display: none;
+  }
+
+  .mentions {
+    margin: 1rem;
+  }
+
   /*##################################### */
   .footerSection {
     background-color: #3d3d3d;
     color: white;
-    padding: 0 0 1rem 1rem;
+    padding: 0 0 1rem 2rem;
   }
   .footerSection .footerTitle {
     font-family: "Shrikhand", cursive;
@@ -177,5 +202,4 @@
   .footerSection .footerAbout p {
     margin: 0.5rem 0 0 0;
   }
-}
-/*# sourceMappingURL=small.css.map */
+}/*# sourceMappingURL=small.css.map */
