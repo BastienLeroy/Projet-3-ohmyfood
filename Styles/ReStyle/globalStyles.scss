@@ -414,31 +414,30 @@ main {
     height: 500px;
     background-image: #f4ebff;
 
-       
-        .formContactName {
-            margin-top : 2rem;
-        }
-        .formContactMail {
-            margin-top : 2rem;
-        }
-        textarea {
-            margin-top: 3rem;
-                    }
-        .btnSubmit {
-            font-family: $fontRoboto;
-            font-size: 1.2rem;
-            width: 100px;
-            height: 30px;
-            color: white;
-            border : 1px solid $backgroundPrimary;
-            border-radius: 60px ;
-            background: #FF79DA;
-            background: -moz-linear-gradient(top, #FF79DA 0%, #D675FF 73%, #9356DC 100%);
-            background: -webkit-linear-gradient(top, #FF79DA 0%, #D675FF 73%, #9356DC 100%);
-            background: linear-gradient(to bottom, #FF79DA 0%, #D675FF 73%, #9356DC 100%);
-            box-shadow: 5px 5px 20px $boxShadowColor;
-            margin-top: 1rem;
-        }
+    .formContactName {
+        margin-top : 2rem;
+    }
+    .formContactMail {
+        margin-top : 2rem;
+    }
+    textarea {
+        margin-top: 3rem;
+    }
+    .btnSubmit {
+        font-family: $fontRoboto;
+        font-size: 1.2rem;
+        width: 100px;
+        height: 30px;
+        color: white;
+        border : 1px solid $backgroundPrimary;
+        border-radius: 60px ;
+        background: #FF79DA;
+        background: -moz-linear-gradient(top, #FF79DA 0%, #D675FF 73%, #9356DC 100%);
+        background: -webkit-linear-gradient(top, #FF79DA 0%, #D675FF 73%, #9356DC 100%);
+        background: linear-gradient(to bottom, #FF79DA 0%, #D675FF 73%, #9356DC 100%);
+        box-shadow: 5px 5px 20px $boxShadowColor;
+        margin-top: 1rem;
+    }
 }
 
 
