@@ -84,22 +84,12 @@
 
 
     /*########## MENTIONS/CONTACT ######### */
-    .imgBg {
-        position: absolute;
-        z-index: 1;
-        display: flex;
-        justify-content: center;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        max-height: 100%;
-        opacity: 0.5;
-      }
-      .formContactMsgSmall {
-          display: none;
-      }
-      .formContactMsgLarge {
-          display: none;
-      }
+    
+    .formContactMsgSmall {
+        display: none;
+    }
+    .formContactMsgLarge {
+        display: none;
+    }
     /*##################################### */
 }

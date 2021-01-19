@@ -539,6 +539,18 @@ main .btnOrder {
 
 /*##################################### */
 /*########## MENTIONS/CONTACT ######### */
+.backgroundImage {
+  position: absolute;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../../Assets/images/restaurants/bigpicture/jay-wennington-N_Y88TWmGwA-unsplash.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+}
+
 .containerContact {
   position: relative;
   width: 1280px;
@@ -555,8 +567,6 @@ main .btnOrder {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 500px;
-  background-image: #f4ebff;
 }
 .formContact .formContactName {
   margin-top: 2rem;
@@ -578,7 +588,7 @@ main .btnOrder {
   background: #FF79DA;
   background: linear-gradient(to bottom, #FF79DA 0%, #D675FF 73%, #9356DC 100%);
   box-shadow: 5px 5px 20px #d3d3d3;
-  margin-top: 1rem;
+  margin: 1rem 0 1rem 0;
 }
 
 .mentions {

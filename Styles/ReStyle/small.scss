@@ -1,13 +1,13 @@
 @import "vars";
 @import "mixin"; 
 
-@media screen and (max-width: 775px) {
+@media screen and (max-width: 767px) {
     body {
         margin: 0;
     }
     .container {
         width: 100%;
-        margin: 0.2rem !important;
+        margin: 0.5rem;
         .fa-angle-left {
             margin-left: 0.5rem;
         }
@@ -84,7 +84,7 @@
         }
     }
     .restaurant {
-        border-radius: 0 !important;
+        border-radius: 0;
         padding-bottom: 3rem;
     }
     .restaurantList {
@@ -148,17 +148,7 @@
 
 
     /*########## MENTIONS/CONTACT ######### */
-    .imgBg {
-        position: absolute;
-        z-index: 1;
-        display: flex;
-        justify-content: center;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        max-height: 100%;
-        opacity: 0.5;
-      }
+  
     .formContactMsgLarge {
         display: none;
     }
@@ -174,8 +164,10 @@
         background-color: rgb(61, 61, 61);
         color : white;
         padding: 0 0 1rem 2rem ;
-        margin-bottom: -4rem;
-            
+        
+        
+    
+
         .footerTitle {
             font-family : $fontShrikhand;
             font-size: 1.2rem;

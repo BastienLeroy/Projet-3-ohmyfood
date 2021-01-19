@@ -69,14 +69,6 @@
 
   /*##################################### */
   /*########## MENTIONS/CONTACT ######### */
-  .imgBg {
-    position: absolute;
-    width: 100%;
-    z-index: 1;
-    max-height: 100%;
-    opacity: 0.5;
-  }
-
   .formContactMsgSmall {
     display: none;
   }
