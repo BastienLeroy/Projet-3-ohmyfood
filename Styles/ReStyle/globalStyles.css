@@ -5,7 +5,7 @@ body {
 
 .container {
   font-family: "Roboto", sans-serif;
-  margin: 0 1rem 0 1rem !important;
+  margin: 0 1rem 0 1rem;
 }
 .container .fa-angle-left {
   color: #303030;
