@@ -611,6 +611,7 @@ main .btnOrder {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-bottom: 2rem;
 }
 .footerSection .footerAbout > a {
   color: white;

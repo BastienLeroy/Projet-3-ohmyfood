@@ -17,6 +17,10 @@
     align-items: center;
   }
 
+  .footerSection {
+    height: 230px;
+  }
+
   /*################ HOME ############### */
   .introContent {
     display: flex;

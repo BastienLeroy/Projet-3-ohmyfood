@@ -6,6 +6,7 @@
         margin: 0;
     }
     .container {
+        width: 100%;
         margin: 0.5rem;
         .fa-angle-left {
             margin-left: 0.5rem;
@@ -140,7 +141,8 @@
         width :90% !important;
     }
     .btnOrder {
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
+        margin-top: 3rem;
     }
     /*##################################### */
 
@@ -172,6 +174,8 @@
         background-color: rgb(61, 61, 61);
         color : white;
         padding: 0 0 1rem 2rem ;
+        
+    
 
         .footerTitle {
             font-family : $fontShrikhand;
@@ -193,8 +197,7 @@
             }
         }
         .footerAbout {
-            margin: 0;
-            display: flex;
+                        display: flex;
             flex-direction: column;
             justify-content: space-around;
             & > a {

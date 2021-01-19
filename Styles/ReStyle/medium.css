@@ -1,4 +1,8 @@
 @media screen and (min-width: 768px) and (max-width: 1099px) {
+  .container {
+    width: 100%;
+  }
+
   header {
     display: flex;
     justify-content: center;
@@ -53,6 +57,10 @@
     border-radius: 1rem 0 0 1rem;
     width: 170px;
     height: 150px;
+  }
+
+  .footerSection {
+    height: 230px;
   }
 
   /*##################################### */
