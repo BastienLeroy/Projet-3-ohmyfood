@@ -57,7 +57,10 @@
 
     #heart5:checked + label, #heart6:checked + label, #heart7:checked + label, #heart8:checked + label{
         position : relative;
-        background: -webkit-linear-gradient(#9356DC, #FF79DA);
+        background: #FF79DA;
+        background: -moz-linear-gradient(-45deg, #FF79DA 0%, #B73BDC 63%, #9356DC 100%);
+        background: -webkit-linear-gradient(-45deg, #FF79DA 0%, #B73BDC 63%, #9356DC 100%);
+        background: linear-gradient(400deg, #FF79DA 0%, #B73BDC 63%, #9356DC 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         will-change: font-size;

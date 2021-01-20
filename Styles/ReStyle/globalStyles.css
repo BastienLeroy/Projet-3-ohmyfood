@@ -39,13 +39,13 @@ main .intro .introContent > h4 {
 main .intro .introButton {
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
-  width: 300px;
+  width: 260px;
   height: 60px;
   color: white;
   border: 1px solid #f2f2f2;
   border-radius: 60px;
   background: #FF79DA;
-  background: linear-gradient(to bottom, #FF79DA 0%, #D675FF 73%, #9356DC 100%);
+  background: linear-gradient(173deg, #FF79DA 0%, #B73BDC 63%, #9356DC 100%);
   box-shadow: 5px 5px 20px #d3d3d3;
   cursor: pointer;
 }
@@ -62,9 +62,9 @@ main .step .stepList {
 main .step .stepList .stepListItem {
   position: relative;
   border: 1px #f2f2f2 solid;
-  border-radius: 20px;
-  box-shadow: 5px 5px 10px #d3d3d3;
-  height: 75px;
+  border-radius: 25px;
+  box-shadow: 3px 3px 10px #d3d3d3;
+  height: 70px;
   background-color: #f2f2f2;
   display: flex;
   justify-content: center;
@@ -78,6 +78,7 @@ main .step .stepList .stepListItem:hover i {
   color: #9356dc;
 }
 main .step .stepList .stepListItem > p {
+  font-size: smaller;
   position: absolute;
   left: -10px;
   width: 20px;
@@ -90,9 +91,10 @@ main .step .stepList .stepListItem > p {
 main .step .stepList .stepListItem > h4 {
   font-size: 1.1rem;
   margin: 0;
-  padding-left: 1rem;
+  padding-left: 1.2rem;
 }
 main .step .stepList .stepListItem > i {
+  padding-right: 1rem;
   color: grey;
 }
 main .restaurant {
@@ -111,7 +113,7 @@ main .restaurant .restaurantList {
 }
 main .restaurant .restaurantList .restaurantListItem {
   position: relative;
-  box-shadow: 2px 2px 10px grey;
+  box-shadow: 2px 2px 10px #d3d3d3;
   border-radius: 1rem 1rem 1rem 1rem;
   height: 150px;
   margin-top: 2rem;
@@ -119,6 +121,7 @@ main .restaurant .restaurantList .restaurantListItem {
   background-color: white;
 }
 main .restaurant .restaurantList .restaurantListItem > p {
+  border-radius: 3px;
   background-color: #99e2d0;
   color: #008006;
   display: flex;
@@ -183,7 +186,8 @@ main .restaurant .restaurantList .restaurantListItem .restaurantListItemName .ch
 }
 main .restaurant .restaurantList .restaurantListItem .restaurantListItemName .checkHeart #heart5:checked + label, main .restaurant .restaurantList .restaurantListItem .restaurantListItemName .checkHeart #heart6:checked + label, main .restaurant .restaurantList .restaurantListItem .restaurantListItemName .checkHeart #heart7:checked + label, main .restaurant .restaurantList .restaurantListItem .restaurantListItemName .checkHeart #heart8:checked + label {
   position: relative;
-  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  background: #FF79DA;
+  background: linear-gradient(400deg, #FF79DA 0%, #B73BDC 63%, #9356DC 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   will-change: font-size;
@@ -289,7 +293,8 @@ main .cardMenu .checkHeart #heart1:checked + label, main .cardMenu .checkHeart #
 }
 main .cardMenu .checkHeart #heart5:checked + label, main .cardMenu .checkHeart #heart6:checked + label, main .cardMenu .checkHeart #heart7:checked + label, main .cardMenu .checkHeart #heart8:checked + label {
   position: relative;
-  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  background: #FF79DA;
+  background: linear-gradient(400deg, #FF79DA 0%, #B73BDC 63%, #9356DC 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   will-change: font-size;
@@ -356,7 +361,7 @@ main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnTitle:hover 
 main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice {
   background-color: white;
   width: 300px;
-  height: 100px;
+  height: 65px;
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
@@ -371,18 +376,22 @@ main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice .text
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  margin: 0.8rem 0 0.5rem 0.7rem;
 }
 main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice .textContent > p {
+  font-size: smaller;
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  margin: 0 0 0 0.7rem;
 }
 main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice .price {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   width: 50px;
+  margin-bottom: 0.5rem;
 }
 main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice .testBox {
   display: none;
@@ -398,8 +407,8 @@ main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover
   justify-content: center;
   align-items: center;
   background-color: #99e2d0;
-  width: 80px;
-  height: 100px;
+  width: 65px;
+  height: 65px;
   border-radius: 0 20px 20px 0;
   align-self: flex-end;
   transform: scale(1);
@@ -411,11 +420,11 @@ main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover
   cursor: pointer;
 }
 main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover .testBox .fas {
-  font-size: 1.5rem;
+  font-size: 1rem;
   background-color: white;
   border-radius: 50%;
   color: #99e2d0;
-  border: 10px solid white;
+  border: 6px solid white;
   -webkit-animation: rotate 300ms linear;
 }
 @-webkit-keyframes slideX {
@@ -497,15 +506,16 @@ main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover
 main .btnOrder {
   -ms-grid-row-align: center;
       align-self: center;
+  margin-top: 2rem;
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
-  width: 300px;
+  width: 215px;
   height: 60px;
   color: white;
   border: 1px solid #f2f2f2;
   border-radius: 60px;
   background: #FF79DA;
-  background: linear-gradient(to bottom, #FF79DA 0%, #D675FF 73%, #9356DC 100%);
+  background: linear-gradient(173deg, #FF79DA 0%, #B73BDC 63%, #9356DC 100%);
   box-shadow: 5px 5px 20px #d3d3d3;
   cursor: pointer;
 }
@@ -586,7 +596,7 @@ main .btnOrder {
   border: 1px solid #f2f2f2;
   border-radius: 60px;
   background: #FF79DA;
-  background: linear-gradient(to bottom, #FF79DA 0%, #D675FF 73%, #9356DC 100%);
+  background: linear-gradient(135deg, #FF79DA 0%, #B73BDC 63%, #9356DC 100%);
   box-shadow: 5px 5px 20px #d3d3d3;
   margin: 1rem 0 1rem 0;
 }
