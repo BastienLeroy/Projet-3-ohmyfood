@@ -1,6 +1,7 @@
 body {
   display: flex;
   justify-content: center;
+  margin: 0;
 }
 
 .container {
@@ -16,6 +17,10 @@ body {
   font-family: "Shrikhand", cursive;
   display: flex;
   justify-content: center;
+}
+.container .headerLogo > a {
+  text-decoration: none;
+  color: black;
 }
 .container .inputHeader {
   border: none;
@@ -552,7 +557,7 @@ main .btnOrder {
 .backgroundImage {
   position: absolute;
   z-index: 1;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-image: url(../../Assets/images/restaurants/bigpicture/jay-wennington-N_Y88TWmGwA-unsplash.webp);
   background-position: center;
@@ -578,14 +583,33 @@ main .btnOrder {
   align-items: center;
   justify-content: center;
 }
-.formContact .formContactName {
+.formContact .formContactInput {
   margin-top: 2rem;
 }
-.formContact .formContactMail {
-  margin-top: 2rem;
+.formContact .formContactInput input {
+  border: none !important;
+  border-radius: 5px;
+  padding: 0.3rem;
+}
+.formContact .formContactInput input:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
 .formContact textarea {
+  border: none !important;
   margin-top: 3rem;
+  border-radius: 5px;
+  padding: 0.3rem;
+}
+.formContact textarea:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
 }
 .formContact .btnSubmit {
   font-family: "Roboto", sans-serif;
