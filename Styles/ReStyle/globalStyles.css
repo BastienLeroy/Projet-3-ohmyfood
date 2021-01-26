@@ -47,15 +47,19 @@ main .intro .introButton {
   width: 260px;
   height: 60px;
   color: white;
-  border: 1px solid #f2f2f2;
+  border: none;
   border-radius: 60px;
   background: #FF79DA;
   background: linear-gradient(173deg, #FF79DA 0%, #B73BDC 63%, #9356DC 100%);
-  box-shadow: 5px 5px 20px #d3d3d3;
+  box-shadow: 2px 2px 7px #f2f2f2;
   cursor: pointer;
 }
 main .intro .introButton:focus {
   outline: none;
+}
+main .intro .introButton:hover {
+  opacity: 0.8;
+  box-shadow: 5px 5px 20px #bebebe;
 }
 main .step {
   display: flex;
@@ -66,6 +70,7 @@ main .step .stepList {
 }
 main .step .stepList .stepListItem {
   position: relative;
+  padding: 2px;
   border: 1px #f2f2f2 solid;
   border-radius: 25px;
   box-shadow: 3px 3px 10px #d3d3d3;
@@ -168,8 +173,7 @@ main .restaurant .restaurantList .restaurantListItem .restaurantListItemName .ch
   left: -1.5px;
   font-size: 1.8em;
   color: transparent;
-  -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   cursor: pointer;
   z-index: 2;
 }
@@ -275,8 +279,7 @@ main .cardMenu .checkHeart #heart5Label, main .cardMenu .checkHeart #heart6Label
   left: -1.5px;
   font-size: 1.8em;
   color: transparent;
-  -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   cursor: pointer;
   z-index: 2;
 }
@@ -327,6 +330,7 @@ main .cardMenu .cardMenuDish {
 main .cardMenu .cardMenuDish .cardMenuDishColumn {
   display: flex;
   flex-direction: column;
+  padding: 0 0.5rem;
 }
 main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumn1 {
   transform: scale(1);
@@ -365,25 +369,28 @@ main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnTitle:hover 
 }
 main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice {
   background-color: white;
-  width: 300px;
   height: 65px;
   border-radius: 20px;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1rem;
+  margin: 0 auto 1rem auto;
 }
-main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice .textContent {
-  max-width: 220px;
+main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice > div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice > div .textContent {
   margin-left: 0.2rem;
 }
-main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice .textContent > h4 {
+main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice > div .textContent > h4 {
   display: -webkit-box;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
   overflow: hidden;
   margin: 0.8rem 0 0.5rem 0.7rem;
 }
-main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice .textContent > p {
+main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice > div .textContent > p {
   font-size: smaller;
   display: -webkit-box;
   -webkit-line-clamp: 1;
@@ -391,21 +398,19 @@ main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice .text
   overflow: hidden;
   margin: 0 0 0 0.7rem;
 }
-main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice .price {
+main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice > div .price {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  width: 50px;
   margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice .testBox {
   display: none;
 }
 main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover {
   cursor: pointer;
-}
-main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover .textContent {
-  width: 150px;
 }
 main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover .testBox {
   display: flex;
@@ -417,11 +422,9 @@ main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover
   border-radius: 0 20px 20px 0;
   align-self: flex-end;
   transform: scale(1);
-  -webkit-animation-name: slideX;
-          animation-name: slideX;
-  -webkit-animation-duration: 300ms;
-          animation-duration: 300ms;
-  transform-origin: 100%;
+  -webkit-animation: slideX 0.4s forwards;
+          animation: slideX 0.4s forwards;
+  animation-direction: reverse;
   cursor: pointer;
 }
 main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover .testBox .fas {
@@ -430,22 +433,22 @@ main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover
   border-radius: 50%;
   color: #99e2d0;
   border: 6px solid white;
-  -webkit-animation: rotate 300ms linear;
+  -webkit-animation: rotate 400ms linear;
 }
 @-webkit-keyframes slideX {
-  0% {
-    transform: scaleX(0);
+  to {
+    width: 0%;
   }
-  100% {
-    transform: scaleX(1);
+  from {
+    width: 25%;
   }
 }
 @keyframes slideX {
-  0% {
-    transform: scaleX(0);
+  to {
+    width: 0%;
   }
-  100% {
-    transform: scaleX(1);
+  from {
+    width: 25%;
   }
 }
 @-webkit-keyframes slideY {
@@ -509,8 +512,7 @@ main .cardMenu .cardMenuDish .cardMenuDishColumn .cardMenuDishColumnChoice:hover
   }
 }
 main .btnOrder {
-  -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
   margin-top: 2rem;
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
@@ -521,8 +523,12 @@ main .btnOrder {
   border-radius: 60px;
   background: #FF79DA;
   background: linear-gradient(173deg, #FF79DA 0%, #B73BDC 63%, #9356DC 100%);
-  box-shadow: 5px 5px 20px #d3d3d3;
+  box-shadow: 2px 2px 7px #f2f2f2;
   cursor: pointer;
+}
+main .btnOrder:hover {
+  opacity: 0.8;
+  box-shadow: 5px 5px 20px #bebebe;
 }
 
 .cardMenuDishColumn1 {

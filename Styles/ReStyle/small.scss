@@ -8,6 +8,7 @@
     .container {
         width: 100%;
         margin: 0;
+        
         .fa-angle-left {
             margin-left: 0.5rem;
         }
@@ -135,10 +136,9 @@
     }
     .cardMenuDish {
         flex-direction: column !important;
-        margin-left: 1.5rem;
     }
     .cardMenuDishColumnChoice {
-        width :90% !important;
+        width: 90%;
     }
     .btnOrder {
         margin-bottom: 4rem;

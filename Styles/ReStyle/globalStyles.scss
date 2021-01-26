@@ -51,17 +51,21 @@ main {
             width: 260px;
             height: 60px;
             color: white;
-            border : 1px solid $backgroundPrimary;
+            border : none;
             border-radius: 60px ;
             background: #FF79DA;
             background: -moz-linear-gradient(-45deg, #FF79DA 0%, #B73BDC 63%, #9356DC 100%);
             background: -webkit-linear-gradient(-45deg, #FF79DA 0%, #B73BDC 63%, #9356DC 100%);
             background: linear-gradient(173deg, #FF79DA 0%, #B73BDC 63%, #9356DC 100%);
-            box-shadow: 5px 5px 20px $boxShadowColor;
+            box-shadow: 2px 2px 7px #f2f2f2;
             cursor: pointer;
     
             &:focus {
                 outline: none;
+            }
+            &:hover {
+                opacity: 0.8;
+                box-shadow: 5px 5px 20px rgb(190, 190, 190);
             }
         }
     }
@@ -75,6 +79,7 @@ main {
     
             .stepListItem {
                 position: relative;
+                padding: 2px;
                 border: 1px $backgroundPrimary solid ;
                 border-radius : 25px;
                 box-shadow: 3px 3px 10px $boxShadowColor;
@@ -214,6 +219,7 @@ main {
             .cardMenuDishColumn {
                 display: flex;
                 flex-direction: column;
+                padding: 0 0.5rem;
                 
                 .cardMenuDishColumn1 {
                     transform: scale(1);
@@ -249,41 +255,48 @@ main {
                 .cardMenuDishColumnChoice {
                     
                     background-color: white;
-                    width: 300px;
                     height: 65px;
                     border-radius: 20px;
                     display: flex;
                     justify-content: space-between;
-                    margin-bottom: 1rem;
-                    
-                    .textContent {
-                        max-width: 220px;
-                        margin-left: 0.2rem;
-                        
-                        > h4 {
-                            display: -webkit-box;
-                            -webkit-line-clamp: 1;
-                            -webkit-box-orient: vertical;
-                            overflow: hidden;
-                            margin: 0.8rem 0 0.5rem 0.7rem;
-                        }
-                        > p {
-                            font-size: smaller;
-                            display: -webkit-box;
-                            -webkit-line-clamp: 1;
-                            -webkit-box-orient: vertical;
-                            overflow: hidden;
-                            margin:0 0 0 0.7rem ;
-                        }
-                    }
-                    .price {
+                    margin: 0 auto 1rem auto;
+
+                    > div {
                         display: flex;
-                        justify-content: center;
-                        align-items: flex-end;
-                        width: 50px;
-                        margin-bottom: 0.5rem;
-                        
+                        justify-content: space-between;
+                        width: 100%;
+
+                        .textContent {
+                            //min-width: 220px;
+                            margin-left: 0.2rem;
+                            
+                            > h4 {
+                                display: -webkit-box;
+                                -webkit-line-clamp: 1;
+                                -webkit-box-orient: vertical;
+                                overflow: hidden;
+                                margin: 0.8rem 0 0.5rem 0.7rem;
+                            }
+                            > p {
+                                font-size: smaller;
+                                display: -webkit-box;
+                                -webkit-line-clamp: 1;
+                                -webkit-box-orient: vertical;
+                                overflow: hidden;
+                                margin:0 0 0 0.7rem ;
+                            }
+                        }
+                        .price {
+                            display: flex;
+                            justify-content: center;
+                            align-items: flex-end;
+                            //width: 50px;
+                            margin-bottom: 0.5rem;
+                            margin-left: 0.5rem;
+                            margin-right: 0.5rem; 
+                        }
                     }
+                    
                     .testBox {
                         display: none;
                     }
@@ -291,7 +304,7 @@ main {
                         cursor: pointer;
     
                         .textContent {
-                            width: 150px;
+                            //width: 220px;
                         }
                     
                         .testBox {
@@ -304,10 +317,10 @@ main {
                             border-radius : 0 20px 20px 0;
                             align-self : flex-end;
                             transform: scale(1);
-                            animation-name: slideX;
-                            animation-duration: 300ms;
-                            transform-origin : 100%;
-                            cursor : pointer;
+                            animation : slideX 0.4s forwards;
+                            animation-direction : reverse;
+                            cursor: pointer;
+                            
 
                             .fas {
                                 font-size : 1rem;
@@ -315,18 +328,17 @@ main {
                                 border-radius : 50%;
                                 color : $colorSecondary;
                                 border : 6px solid white;
-                                -webkit-animation: rotate 300ms linear;
+                                -webkit-animation: rotate 400ms linear;
                                 }
                     
-                            @keyframes slideX {
-                                0% {
-                                    transform: scaleX(0);
-                                    }
-                                    
-                                100% {
-                                    transform: scaleX(1);
-                                }
-                            }
+                                @keyframes slideX {
+                                    to{
+                                         width: 0%;
+                                     }
+                                   from{
+                                     width : 25%;
+                                   }
+                                 }
                             @keyframes slideY {
                                 0% {
                                     transform: scaleY(0);
@@ -346,6 +358,7 @@ main {
                                 100% {
                                     -webkit-transform: rotate(360deg);
                                     transform: rotate(360deg);
+                                    
                                 }
                                 0% {
                                     -webkit-transform: rotate(0deg);
@@ -380,10 +393,16 @@ main {
         background: -moz-linear-gradient(-45deg, #FF79DA 0%, #B73BDC 63%, #9356DC 100%);
         background: -webkit-linear-gradient(-45deg, #FF79DA 0%, #B73BDC 63%, #9356DC 100%);
         background: linear-gradient(173deg, #FF79DA 0%, #B73BDC 63%, #9356DC 100%);
-        box-shadow: 5px 5px 20px $boxShadowColor;
+        box-shadow: 2px 2px 7px #f2f2f2;
         cursor: pointer;
+        
+            &:hover {
+                opacity: 0.8;
+                box-shadow: 5px 5px 20px rgb(190, 190, 190);
+            }
+        }
     }
-}
+
 .cardMenuDishColumn1 {
     transform: scale(1);
     animation-name: slideY;

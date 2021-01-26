@@ -26,8 +26,7 @@
   .intro .introButton {
     display: flex;
     justify-content: center;
-    -ms-grid-row-align: center;
-        align-self: center;
+    align-self: center;
     align-items: center;
   }
 
@@ -68,11 +67,8 @@
   .cardMenu {
     height: 640px;
   }
-  .cardMenu .cardMenuDish {
-    margin-left: 1.5rem;
-  }
   .cardMenu .cardMenuDishColumnChoice {
-    width: 90% !important;
+    width: 250px;
   }
 
   /*##################################### */

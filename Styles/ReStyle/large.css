@@ -60,11 +60,8 @@
   .cardMenu {
     height: 640px;
   }
-  .cardMenu .cardMenuDish {
-    margin-left: 1.5rem;
-  }
   .cardMenu .cardMenuDishColumnChoice {
-    width: 300px !important;
+    width: 300px;
   }
 
   /*##################################### */
